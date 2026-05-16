@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 297" width="210" height="297">
+  <!-- Background -->
+  <rect width="210" height="297" fill="white"/>
+
+  <!-- Template: simple -->
+    <!-- Name -->
+    <rect x="50" y="16" width="110" height="10" rx="2" fill="#4B5563"/>
+    <rect x="40" y="32" width="130" height="3" rx="1.5" fill="#9CA3AF" opacity="0.5"/>
+    <rect x="40" y="39" width="78.0" height="3" rx="1.5" fill="#9CA3AF" opacity="0.5"/>
+    <line x1="18" y1="48" x2="192" y2="48" stroke="#4B5563" stroke-width="1"/>
+    <!-- Sections -->
+    <rect x="18" y="58" width="50" height="5" rx="2.5" fill="#1F2937" opacity="0.8"/>
+    <rect x="18" y="70" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="78" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="86" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="94" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="102" width="104.39999999999999" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <line x1="18" y1="110" x2="192" y2="110" stroke="#E5E7EB" stroke-width="0.5"/>
+    <rect x="18" y="118" width="45" height="5" rx="2.5" fill="#1F2937" opacity="0.8"/>
+    <rect x="18" y="130" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="138" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="146" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="154" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="162" width="104.39999999999999" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <line x1="18" y1="170" x2="192" y2="170" stroke="#E5E7EB" stroke-width="0.5"/>
+    <rect x="18" y="178" width="40" height="5" rx="2.5" fill="#1F2937" opacity="0.8"/>
+    <rect x="18" y="190" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="198" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="206" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="214" width="104.39999999999999" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <line x1="18" y1="222" x2="192" y2="222" stroke="#E5E7EB" stroke-width="0.5"/>
+    <rect x="18" y="230" width="36" height="5" rx="2.5" fill="#1F2937" opacity="0.8"/>
+    <rect x="18" y="242" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="250" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="258" width="104.39999999999999" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+
+  <!-- Template name label -->
+  <rect x="0" y="280" width="210" height="17" fill="white" opacity="0.85"/>
+  <text x="105" y="293" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="600"
+        fill="#4B5563" text-anchor="middle" letter-spacing="1.5">
+    SIMPLE
+  </text>
+</svg>

@@ -1,0 +1,1034 @@
+[
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000001",
+    "fields": {
+      "name": "Cascade",
+      "slug": "cascade",
+      "skin_id": "srz1",
+      "type": "resume",
+      "category": "professional",
+      "html_template": "templates/skins/cascade/template.html",
+      "css_styles": "templates/skins/cascade/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 95,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects", "references"],
+      "color_schemes": [
+        {"name": "Classic Blue", "primary": "#2C3E50", "secondary": "#3498DB", "accent": "#1ABC9C", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Charcoal", "primary": "#2D2D2D", "secondary": "#555555", "accent": "#E74C3C", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Navy", "primary": "#1B2A4A", "secondary": "#2980B9", "accent": "#F39C12", "text": "#2C3E50", "background": "#FFFFFF"},
+        {"name": "Forest", "primary": "#1E3A2F", "secondary": "#27AE60", "accent": "#F1C40F", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Burgundy", "primary": "#6B2737", "secondary": "#C0392B", "accent": "#E67E22", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Slate", "primary": "#34495E", "secondary": "#7F8C8D", "accent": "#1ABC9C", "text": "#2C3E50", "background": "#F9F9F9"}
+      ],
+      "font_options": ["Inter", "Roboto", "Open Sans", "Lato", "Montserrat", "Source Sans Pro", "Nunito", "Poppins", "Raleway", "PT Sans"],
+      "created_at": "2025-01-15T10:00:00Z",
+      "updated_at": "2025-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000002",
+    "fields": {
+      "name": "Ceramica",
+      "slug": "ceramica",
+      "skin_id": "cer1",
+      "type": "resume",
+      "category": "modern",
+      "html_template": "templates/skins/ceramica/template.html",
+      "css_styles": "templates/skins/ceramica/styles.css",
+      "is_active": true,
+      "is_new": true,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 88,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects"],
+      "color_schemes": [
+        {"name": "Terracotta", "primary": "#C0392B", "secondary": "#E74C3C", "accent": "#F39C12", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Ocean", "primary": "#2980B9", "secondary": "#3498DB", "accent": "#1ABC9C", "text": "#2C3E50", "background": "#FFFFFF"},
+        {"name": "Sage", "primary": "#27AE60", "secondary": "#2ECC71", "accent": "#F1C40F", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Plum", "primary": "#8E44AD", "secondary": "#9B59B6", "accent": "#E74C3C", "text": "#2C3E50", "background": "#FFFFFF"},
+        {"name": "Amber", "primary": "#D35400", "secondary": "#E67E22", "accent": "#F39C12", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Steel", "primary": "#2C3E50", "secondary": "#34495E", "accent": "#3498DB", "text": "#333333", "background": "#F5F5F5"},
+        {"name": "Rose", "primary": "#C0392B", "secondary": "#E08283", "accent": "#F1C40F", "text": "#333333", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Poppins", "Inter", "Roboto", "Montserrat", "Nunito", "Open Sans", "Lato", "Raleway", "DM Sans", "Work Sans"],
+      "created_at": "2025-06-01T10:00:00Z",
+      "updated_at": "2025-06-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000003",
+    "fields": {
+      "name": "Classic",
+      "slug": "classic",
+      "skin_id": "cls1",
+      "type": "resume",
+      "category": "professional",
+      "html_template": "templates/skins/classic/template.html",
+      "css_styles": "templates/skins/classic/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 92,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "references"],
+      "color_schemes": [
+        {"name": "Traditional", "primary": "#000000", "secondary": "#333333", "accent": "#2C3E50", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Navy Classic", "primary": "#1B2A4A", "secondary": "#2C3E50", "accent": "#2980B9", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Warm Grey", "primary": "#4A4A4A", "secondary": "#777777", "accent": "#D4A373", "text": "#333333", "background": "#FAFAFA"},
+        {"name": "Dark Slate", "primary": "#2F4F4F", "secondary": "#556B6B", "accent": "#8FBC8F", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Espresso", "primary": "#3E2723", "secondary": "#5D4037", "accent": "#D4A373", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Graphite", "primary": "#37474F", "secondary": "#546E7A", "accent": "#78909C", "text": "#263238", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Times New Roman", "Georgia", "Garamond", "Palatino", "Cambria", "Libre Baskerville", "Merriweather", "Lora", "Source Serif Pro", "PT Serif"],
+      "created_at": "2025-01-10T10:00:00Z",
+      "updated_at": "2025-01-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000004",
+    "fields": {
+      "name": "Concept",
+      "slug": "concept",
+      "skin_id": "srz2",
+      "type": "resume",
+      "category": "creative",
+      "html_template": "templates/skins/concept/template.html",
+      "css_styles": "templates/skins/concept/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": false,
+      "popularity_score": 75,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "projects", "portfolio", "interests"],
+      "color_schemes": [
+        {"name": "Vibrant", "primary": "#E74C3C", "secondary": "#3498DB", "accent": "#F1C40F", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Neon", "primary": "#00D2FF", "secondary": "#7B2FF7", "accent": "#FF6B6B", "text": "#1A1A2E", "background": "#FFFFFF"},
+        {"name": "Sunset", "primary": "#FF6B35", "secondary": "#F7931E", "accent": "#FFD700", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Aurora", "primary": "#667EEA", "secondary": "#764BA2", "accent": "#F093FB", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Coral", "primary": "#FF6F61", "secondary": "#DE6262", "accent": "#FFB88C", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Electric", "primary": "#6C5CE7", "secondary": "#A29BFE", "accent": "#FD79A8", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Tropical", "primary": "#00B894", "secondary": "#00CEC9", "accent": "#FDCB6E", "text": "#2D3436", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Poppins", "Montserrat", "Raleway", "Quicksand", "Comfortaa", "Nunito", "DM Sans", "Space Grotesk", "Outfit", "Sora"],
+      "created_at": "2025-02-01T10:00:00Z",
+      "updated_at": "2025-02-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000005",
+    "fields": {
+      "name": "Crisp",
+      "slug": "crisp",
+      "skin_id": "srz3",
+      "type": "resume",
+      "category": "simple",
+      "html_template": "templates/skins/crisp/template.html",
+      "css_styles": "templates/skins/crisp/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 85,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications"],
+      "color_schemes": [
+        {"name": "Clean", "primary": "#333333", "secondary": "#666666", "accent": "#2980B9", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Minimal Blue", "primary": "#2C3E50", "secondary": "#3498DB", "accent": "#1ABC9C", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Light", "primary": "#555555", "secondary": "#888888", "accent": "#E74C3C", "text": "#444444", "background": "#FFFFFF"},
+        {"name": "Ink", "primary": "#1A1A1A", "secondary": "#4A4A4A", "accent": "#2980B9", "text": "#1A1A1A", "background": "#FFFFFF"},
+        {"name": "Soft", "primary": "#5D6D7E", "secondary": "#85929E", "accent": "#48C9B0", "text": "#2C3E50", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Inter", "Roboto", "Open Sans", "Lato", "Source Sans Pro", "Nunito Sans", "IBM Plex Sans", "Karla"],
+      "created_at": "2025-01-20T10:00:00Z",
+      "updated_at": "2025-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000006",
+    "fields": {
+      "name": "Cubic",
+      "slug": "cubic",
+      "skin_id": "srz4",
+      "type": "resume",
+      "category": "professional",
+      "html_template": "templates/skins/cubic/template.html",
+      "css_styles": "templates/skins/cubic/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": true,
+      "is_ats_friendly": true,
+      "popularity_score": 90,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects", "references"],
+      "color_schemes": [
+        {"name": "Corporate Blue", "primary": "#2C3E50", "secondary": "#2980B9", "accent": "#3498DB", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Executive", "primary": "#1B2A4A", "secondary": "#34495E", "accent": "#E67E22", "text": "#2C3E50", "background": "#FFFFFF"},
+        {"name": "Midnight", "primary": "#0C1821", "secondary": "#1B2838", "accent": "#3498DB", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Emerald", "primary": "#145A32", "secondary": "#1E8449", "accent": "#27AE60", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Royal", "primary": "#4A235A", "secondary": "#6C3483", "accent": "#AF7AC5", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Steel Blue", "primary": "#1C2833", "secondary": "#2E4053", "accent": "#5DADE2", "text": "#2C3E50", "background": "#F8F9FA"},
+        {"name": "Obsidian", "primary": "#17202A", "secondary": "#2C3E50", "accent": "#F39C12", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Teal", "primary": "#0E6655", "secondary": "#148F77", "accent": "#1ABC9C", "text": "#333333", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Inter", "Roboto", "Montserrat", "Open Sans", "Lato", "Source Sans Pro", "Nunito", "Poppins", "Raleway", "Work Sans"],
+      "created_at": "2025-01-18T10:00:00Z",
+      "updated_at": "2025-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000007",
+    "fields": {
+      "name": "Diamond",
+      "slug": "diamond",
+      "skin_id": "srz5",
+      "type": "resume",
+      "category": "professional",
+      "html_template": "templates/skins/diamond/template.html",
+      "css_styles": "templates/skins/diamond/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": true,
+      "is_ats_friendly": true,
+      "popularity_score": 87,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects", "references", "awards"],
+      "color_schemes": [
+        {"name": "Platinum", "primary": "#2C3E50", "secondary": "#95A5A6", "accent": "#3498DB", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Gold", "primary": "#7D6608", "secondary": "#B7950B", "accent": "#F1C40F", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Silver", "primary": "#5D6D7E", "secondary": "#AEB6BF", "accent": "#2980B9", "text": "#2C3E50", "background": "#FFFFFF"},
+        {"name": "Rose Gold", "primary": "#A0522D", "secondary": "#CD853F", "accent": "#DAA520", "text": "#333333", "background": "#FFFAF0"},
+        {"name": "Sapphire", "primary": "#1B4F72", "secondary": "#2E86C1", "accent": "#5DADE2", "text": "#1B2631", "background": "#FFFFFF"},
+        {"name": "Onyx", "primary": "#1C1C1C", "secondary": "#333333", "accent": "#F39C12", "text": "#333333", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Montserrat", "Inter", "Roboto", "Lato", "Open Sans", "Poppins", "Nunito", "Raleway", "Source Sans Pro", "Rubik"],
+      "created_at": "2025-02-10T10:00:00Z",
+      "updated_at": "2025-02-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000008",
+    "fields": {
+      "name": "Dynamic",
+      "slug": "dynamic",
+      "skin_id": "dyn1",
+      "type": "resume",
+      "category": "modern",
+      "html_template": "templates/skins/dynamic/template.html",
+      "css_styles": "templates/skins/dynamic/styles.css",
+      "is_active": true,
+      "is_new": true,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 82,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects", "interests"],
+      "color_schemes": [
+        {"name": "Energetic", "primary": "#E74C3C", "secondary": "#C0392B", "accent": "#F39C12", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Electric Blue", "primary": "#2980B9", "secondary": "#3498DB", "accent": "#1ABC9C", "text": "#2C3E50", "background": "#FFFFFF"},
+        {"name": "Lime", "primary": "#27AE60", "secondary": "#2ECC71", "accent": "#F1C40F", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Magenta", "primary": "#8E44AD", "secondary": "#9B59B6", "accent": "#E74C3C", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Tangerine", "primary": "#E67E22", "secondary": "#F39C12", "accent": "#E74C3C", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Cyan", "primary": "#00ACC1", "secondary": "#26C6DA", "accent": "#FFA726", "text": "#263238", "background": "#FFFFFF"},
+        {"name": "Hot Pink", "primary": "#D81B60", "secondary": "#E91E63", "accent": "#FF5722", "text": "#333333", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Poppins", "Montserrat", "Inter", "Nunito", "Quicksand", "DM Sans", "Space Grotesk", "Outfit", "Sora", "Rubik"],
+      "created_at": "2025-07-01T10:00:00Z",
+      "updated_at": "2025-07-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000009",
+    "fields": {
+      "name": "Enfold",
+      "slug": "enfold",
+      "skin_id": "srz6",
+      "type": "resume",
+      "category": "professional",
+      "html_template": "templates/skins/enfold/template.html",
+      "css_styles": "templates/skins/enfold/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 78,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "references"],
+      "color_schemes": [
+        {"name": "Professional", "primary": "#2C3E50", "secondary": "#34495E", "accent": "#2980B9", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Warm", "primary": "#8B4513", "secondary": "#A0522D", "accent": "#DAA520", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Cool", "primary": "#1B4F72", "secondary": "#21618C", "accent": "#3498DB", "text": "#2C3E50", "background": "#FFFFFF"},
+        {"name": "Earth", "primary": "#6E4B3A", "secondary": "#8B6F47", "accent": "#A0522D", "text": "#333333", "background": "#FAF5EF"},
+        {"name": "Storm", "primary": "#37474F", "secondary": "#455A64", "accent": "#607D8B", "text": "#263238", "background": "#FFFFFF"},
+        {"name": "Wine", "primary": "#722F37", "secondary": "#8B3A3A", "accent": "#CD5C5C", "text": "#333333", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Roboto", "Inter", "Open Sans", "Lato", "Montserrat", "Source Sans Pro", "Nunito", "PT Sans", "Rubik"],
+      "created_at": "2025-02-15T10:00:00Z",
+      "updated_at": "2025-02-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000010",
+    "fields": {
+      "name": "Iconic",
+      "slug": "iconic",
+      "skin_id": "srz7",
+      "type": "resume",
+      "category": "business",
+      "html_template": "templates/skins/iconic/template.html",
+      "css_styles": "templates/skins/iconic/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": true,
+      "is_ats_friendly": true,
+      "popularity_score": 83,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects", "references"],
+      "color_schemes": [
+        {"name": "Business", "primary": "#1B2A4A", "secondary": "#2C3E50", "accent": "#E67E22", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Authority", "primary": "#0C1821", "secondary": "#1B2838", "accent": "#C0392B", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Trust", "primary": "#1A5276", "secondary": "#2471A3", "accent": "#3498DB", "text": "#2C3E50", "background": "#FFFFFF"},
+        {"name": "Prestige", "primary": "#1C2833", "secondary": "#2C3E50", "accent": "#F1C40F", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Heritage", "primary": "#3E2723", "secondary": "#5D4037", "accent": "#8D6E63", "text": "#3E2723", "background": "#FFFFFF"},
+        {"name": "Command", "primary": "#212121", "secondary": "#424242", "accent": "#FF5722", "text": "#212121", "background": "#FFFFFF"},
+        {"name": "Legacy", "primary": "#1B2631", "secondary": "#273746", "accent": "#2ECC71", "text": "#1B2631", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Montserrat", "Inter", "Roboto", "Open Sans", "Lato", "Poppins", "Source Sans Pro", "Nunito", "Work Sans", "Rubik"],
+      "created_at": "2025-03-01T10:00:00Z",
+      "updated_at": "2025-03-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000011",
+    "fields": {
+      "name": "Impetus",
+      "slug": "impetus",
+      "skin_id": "imp1",
+      "type": "resume",
+      "category": "creative",
+      "html_template": "templates/skins/impetus/template.html",
+      "css_styles": "templates/skins/impetus/styles.css",
+      "is_active": true,
+      "is_new": true,
+      "is_premium": false,
+      "is_ats_friendly": false,
+      "popularity_score": 76,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "projects", "portfolio", "interests", "awards"],
+      "color_schemes": [
+        {"name": "Bold", "primary": "#FF6B6B", "secondary": "#EE5A24", "accent": "#F9CA24", "text": "#2D3436", "background": "#FFFFFF", "is_default": true},
+        {"name": "Cosmic", "primary": "#6C5CE7", "secondary": "#A29BFE", "accent": "#FD79A8", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Tropical", "primary": "#00B894", "secondary": "#55EFC4", "accent": "#FDCB6E", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Lava", "primary": "#D63031", "secondary": "#FF7675", "accent": "#FFEAA7", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Galaxy", "primary": "#0984E3", "secondary": "#74B9FF", "accent": "#DFE6E9", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Candy", "primary": "#E84393", "secondary": "#FD79A8", "accent": "#FDCB6E", "text": "#2D3436", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Quicksand", "Comfortaa", "Poppins", "Nunito", "Montserrat", "DM Sans", "Space Grotesk", "Outfit"],
+      "created_at": "2025-08-01T10:00:00Z",
+      "updated_at": "2025-08-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000012",
+    "fields": {
+      "name": "Influx",
+      "slug": "influx",
+      "skin_id": "srz8",
+      "type": "resume",
+      "category": "modern",
+      "html_template": "templates/skins/influx/template.html",
+      "css_styles": "templates/skins/influx/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 80,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects"],
+      "color_schemes": [
+        {"name": "Fresh", "primary": "#00B894", "secondary": "#00CEC9", "accent": "#FDCB6E", "text": "#2D3436", "background": "#FFFFFF", "is_default": true},
+        {"name": "Sky", "primary": "#0984E3", "secondary": "#74B9FF", "accent": "#FD79A8", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Mint", "primary": "#1ABC9C", "secondary": "#2ECC71", "accent": "#F39C12", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Violet", "primary": "#6C5CE7", "secondary": "#A29BFE", "accent": "#FDCB6E", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Peach", "primary": "#E17055", "secondary": "#FAB1A0", "accent": "#FFEAA7", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Aqua", "primary": "#0097A7", "secondary": "#00BCD4", "accent": "#FFD54F", "text": "#263238", "background": "#FFFFFF"},
+        {"name": "Dusk", "primary": "#5C6BC0", "secondary": "#7986CB", "accent": "#FF8A65", "text": "#283593", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Inter", "Poppins", "Nunito", "Roboto", "DM Sans", "Work Sans", "Outfit", "Space Grotesk", "Sora"],
+      "created_at": "2025-03-10T10:00:00Z",
+      "updated_at": "2025-03-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000013",
+    "fields": {
+      "name": "Initials",
+      "slug": "initials",
+      "skin_id": "srz9",
+      "type": "resume",
+      "category": "creative",
+      "html_template": "templates/skins/initials/template.html",
+      "css_styles": "templates/skins/initials/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": false,
+      "popularity_score": 72,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "projects", "portfolio"],
+      "color_schemes": [
+        {"name": "Signature", "primary": "#2C3E50", "secondary": "#E74C3C", "accent": "#F39C12", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Ink & Gold", "primary": "#1A1A2E", "secondary": "#16213E", "accent": "#E2B714", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Monogram", "primary": "#2D3436", "secondary": "#636E72", "accent": "#D63031", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Brush", "primary": "#6C5CE7", "secondary": "#A29BFE", "accent": "#FD79A8", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Stamp", "primary": "#C0392B", "secondary": "#E74C3C", "accent": "#2C3E50", "text": "#333333", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Playfair Display", "Cormorant Garamond", "Poppins", "Montserrat", "Libre Baskerville", "DM Serif Display", "Abril Fatface", "Lora"],
+      "created_at": "2025-03-15T10:00:00Z",
+      "updated_at": "2025-03-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000014",
+    "fields": {
+      "name": "Lumina",
+      "slug": "lumina",
+      "skin_id": "lum1",
+      "type": "resume",
+      "category": "modern",
+      "html_template": "templates/skins/lumina/template.html",
+      "css_styles": "templates/skins/lumina/styles.css",
+      "is_active": true,
+      "is_new": true,
+      "is_premium": true,
+      "is_ats_friendly": true,
+      "popularity_score": 86,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects", "awards"],
+      "color_schemes": [
+        {"name": "Radiant", "primary": "#667EEA", "secondary": "#764BA2", "accent": "#F093FB", "text": "#2D3436", "background": "#FFFFFF", "is_default": true},
+        {"name": "Glow", "primary": "#F39C12", "secondary": "#E67E22", "accent": "#E74C3C", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Shine", "primary": "#00B894", "secondary": "#55EFC4", "accent": "#FDCB6E", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Beam", "primary": "#0984E3", "secondary": "#74B9FF", "accent": "#FD79A8", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Flare", "primary": "#D63031", "secondary": "#FF7675", "accent": "#FFEAA7", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Spark", "primary": "#6C5CE7", "secondary": "#A29BFE", "accent": "#00CEC9", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Blaze", "primary": "#E17055", "secondary": "#FAB1A0", "accent": "#FDCB6E", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Dawn", "primary": "#FDA7DF", "secondary": "#D980FA", "accent": "#9980FA", "text": "#2D3436", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Poppins", "Inter", "Montserrat", "DM Sans", "Nunito", "Work Sans", "Outfit", "Space Grotesk", "Sora", "Rubik"],
+      "created_at": "2025-09-01T10:00:00Z",
+      "updated_at": "2025-09-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000015",
+    "fields": {
+      "name": "Minimo",
+      "slug": "minimo",
+      "skin_id": "trz1",
+      "type": "resume",
+      "category": "simple",
+      "html_template": "templates/skins/minimo/template.html",
+      "css_styles": "templates/skins/minimo/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 84,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications"],
+      "color_schemes": [
+        {"name": "Minimal", "primary": "#333333", "secondary": "#777777", "accent": "#000000", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Whisper", "primary": "#555555", "secondary": "#999999", "accent": "#2980B9", "text": "#444444", "background": "#FFFFFF"},
+        {"name": "Ghost", "primary": "#666666", "secondary": "#AAAAAA", "accent": "#1ABC9C", "text": "#555555", "background": "#FFFFFF"},
+        {"name": "Paper", "primary": "#2C3E50", "secondary": "#7F8C8D", "accent": "#E74C3C", "text": "#2C3E50", "background": "#FAFAFA"},
+        {"name": "Pencil", "primary": "#37474F", "secondary": "#78909C", "accent": "#FF5722", "text": "#263238", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Inter", "Roboto", "Open Sans", "Lato", "Source Sans Pro", "Nunito Sans", "Karla", "IBM Plex Sans"],
+      "created_at": "2025-01-22T10:00:00Z",
+      "updated_at": "2025-01-22T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000016",
+    "fields": {
+      "name": "Modern",
+      "slug": "modern",
+      "skin_id": "trz2",
+      "type": "resume",
+      "category": "modern",
+      "html_template": "templates/skins/modern/template.html",
+      "css_styles": "templates/skins/modern/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 89,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects"],
+      "color_schemes": [
+        {"name": "Contemporary", "primary": "#2C3E50", "secondary": "#3498DB", "accent": "#E74C3C", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Tech", "primary": "#0D47A1", "secondary": "#1976D2", "accent": "#00BCD4", "text": "#212121", "background": "#FFFFFF"},
+        {"name": "Startup", "primary": "#6C5CE7", "secondary": "#A29BFE", "accent": "#00CEC9", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Agency", "primary": "#FF6B6B", "secondary": "#EE5A24", "accent": "#FFEAA7", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Digital", "primary": "#00B894", "secondary": "#55EFC4", "accent": "#FD79A8", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Studio", "primary": "#E17055", "secondary": "#FAB1A0", "accent": "#6C5CE7", "text": "#2D3436", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Poppins", "Inter", "Montserrat", "DM Sans", "Nunito", "Work Sans", "Outfit", "Rubik", "Space Grotesk"],
+      "created_at": "2025-01-25T10:00:00Z",
+      "updated_at": "2025-01-25T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000017",
+    "fields": {
+      "name": "Muse",
+      "slug": "muse",
+      "skin_id": "trz3",
+      "type": "resume",
+      "category": "creative",
+      "html_template": "templates/skins/muse/template.html",
+      "css_styles": "templates/skins/muse/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": false,
+      "popularity_score": 74,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "projects", "portfolio", "interests"],
+      "color_schemes": [
+        {"name": "Artistic", "primary": "#8E44AD", "secondary": "#9B59B6", "accent": "#F1C40F", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Bohemian", "primary": "#D35400", "secondary": "#E67E22", "accent": "#1ABC9C", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Canvas", "primary": "#2C3E50", "secondary": "#E74C3C", "accent": "#F39C12", "text": "#333333", "background": "#FFF8E1"},
+        {"name": "Palette", "primary": "#00BCD4", "secondary": "#4DD0E1", "accent": "#FF5722", "text": "#263238", "background": "#FFFFFF"},
+        {"name": "Gallery", "primary": "#3F51B5", "secondary": "#5C6BC0", "accent": "#FF4081", "text": "#212121", "background": "#FFFFFF"},
+        {"name": "Atelier", "primary": "#795548", "secondary": "#A1887F", "accent": "#FFB300", "text": "#3E2723", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Playfair Display", "Poppins", "Montserrat", "Cormorant Garamond", "Libre Baskerville", "Quicksand", "DM Serif Display", "Lora"],
+      "created_at": "2025-02-20T10:00:00Z",
+      "updated_at": "2025-02-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000018",
+    "fields": {
+      "name": "Nanica",
+      "slug": "nanica",
+      "skin_id": "trz4",
+      "type": "resume",
+      "category": "simple",
+      "html_template": "templates/skins/nanica/template.html",
+      "css_styles": "templates/skins/nanica/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 81,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications"],
+      "color_schemes": [
+        {"name": "Natural", "primary": "#2C3E50", "secondary": "#7F8C8D", "accent": "#27AE60", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Breeze", "primary": "#2980B9", "secondary": "#5DADE2", "accent": "#1ABC9C", "text": "#2C3E50", "background": "#FFFFFF"},
+        {"name": "Sand", "primary": "#8D6E63", "secondary": "#A1887F", "accent": "#D4A373", "text": "#3E2723", "background": "#FFFAF5"},
+        {"name": "Cloud", "primary": "#546E7A", "secondary": "#90A4AE", "accent": "#26C6DA", "text": "#37474F", "background": "#FFFFFF"},
+        {"name": "Leaf", "primary": "#2E7D32", "secondary": "#4CAF50", "accent": "#FFC107", "text": "#1B5E20", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Inter", "Roboto", "Open Sans", "Lato", "Nunito Sans", "Source Sans Pro", "Karla", "IBM Plex Sans"],
+      "created_at": "2025-02-25T10:00:00Z",
+      "updated_at": "2025-02-25T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000019",
+    "fields": {
+      "name": "Newcast",
+      "slug": "newcast",
+      "skin_id": "trz5",
+      "type": "resume",
+      "category": "professional",
+      "html_template": "templates/skins/newcast/template.html",
+      "css_styles": "templates/skins/newcast/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 79,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "references"],
+      "color_schemes": [
+        {"name": "Refined", "primary": "#2C3E50", "secondary": "#34495E", "accent": "#3498DB", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Polished", "primary": "#1B2A4A", "secondary": "#2C3E50", "accent": "#E67E22", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Composed", "primary": "#37474F", "secondary": "#546E7A", "accent": "#26A69A", "text": "#263238", "background": "#FFFFFF"},
+        {"name": "Dignified", "primary": "#4A235A", "secondary": "#6C3483", "accent": "#BB8FCE", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Steadfast", "primary": "#1A5276", "secondary": "#2471A3", "accent": "#5DADE2", "text": "#1B2631", "background": "#FFFFFF"},
+        {"name": "Resolute", "primary": "#1E3A2F", "secondary": "#27AE60", "accent": "#2ECC71", "text": "#1E3A2F", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Roboto", "Inter", "Open Sans", "Lato", "Montserrat", "Source Sans Pro", "PT Sans", "Nunito", "Work Sans"],
+      "created_at": "2025-03-05T10:00:00Z",
+      "updated_at": "2025-03-05T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000020",
+    "fields": {
+      "name": "Primo",
+      "slug": "primo",
+      "skin_id": "trz6",
+      "type": "resume",
+      "category": "business",
+      "html_template": "templates/skins/primo/template.html",
+      "css_styles": "templates/skins/primo/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": true,
+      "is_ats_friendly": true,
+      "popularity_score": 86,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects", "references"],
+      "color_schemes": [
+        {"name": "Executive", "primary": "#1B2A4A", "secondary": "#2C3E50", "accent": "#C0392B", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Director", "primary": "#0C1821", "secondary": "#162032", "accent": "#E67E22", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Chairman", "primary": "#1C2833", "secondary": "#273746", "accent": "#F1C40F", "text": "#1C2833", "background": "#FFFFFF"},
+        {"name": "Founder", "primary": "#145A32", "secondary": "#196F3D", "accent": "#27AE60", "text": "#0B5345", "background": "#FFFFFF"},
+        {"name": "Pioneer", "primary": "#4A235A", "secondary": "#6C3483", "accent": "#8E44AD", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Leader", "primary": "#1A5276", "secondary": "#21618C", "accent": "#2980B9", "text": "#1B2631", "background": "#FFFFFF"},
+        {"name": "Visionary", "primary": "#17202A", "secondary": "#2C3E50", "accent": "#1ABC9C", "text": "#17202A", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Montserrat", "Inter", "Roboto", "Lato", "Open Sans", "Poppins", "Source Sans Pro", "Nunito", "Rubik", "Work Sans"],
+      "created_at": "2025-03-20T10:00:00Z",
+      "updated_at": "2025-03-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000021",
+    "fields": {
+      "name": "Profile",
+      "slug": "profile",
+      "skin_id": "pro1",
+      "type": "resume",
+      "category": "modern",
+      "html_template": "templates/skins/profile/template.html",
+      "css_styles": "templates/skins/profile/styles.css",
+      "is_active": true,
+      "is_new": true,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 84,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects", "interests"],
+      "color_schemes": [
+        {"name": "Personal", "primary": "#2C3E50", "secondary": "#3498DB", "accent": "#E74C3C", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Social", "primary": "#0984E3", "secondary": "#74B9FF", "accent": "#FD79A8", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Connect", "primary": "#00B894", "secondary": "#55EFC4", "accent": "#FDCB6E", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Network", "primary": "#6C5CE7", "secondary": "#A29BFE", "accent": "#FF7675", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Engage", "primary": "#E17055", "secondary": "#FAB1A0", "accent": "#00CEC9", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Reach", "primary": "#D63031", "secondary": "#FF7675", "accent": "#FFEAA7", "text": "#2D3436", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Poppins", "Inter", "DM Sans", "Nunito", "Montserrat", "Work Sans", "Outfit", "Space Grotesk", "Sora", "Rubik"],
+      "created_at": "2025-10-01T10:00:00Z",
+      "updated_at": "2025-10-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000022",
+    "fields": {
+      "name": "Simple",
+      "slug": "simple",
+      "skin_id": "trz7",
+      "type": "resume",
+      "category": "simple",
+      "html_template": "templates/skins/simple/template.html",
+      "css_styles": "templates/skins/simple/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 91,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications"],
+      "color_schemes": [
+        {"name": "Plain", "primary": "#333333", "secondary": "#666666", "accent": "#2C3E50", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Basic Blue", "primary": "#2C3E50", "secondary": "#3498DB", "accent": "#2980B9", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Bare", "primary": "#555555", "secondary": "#888888", "accent": "#E74C3C", "text": "#444444", "background": "#FFFFFF"},
+        {"name": "Essential", "primary": "#37474F", "secondary": "#607D8B", "accent": "#FF5722", "text": "#263238", "background": "#FFFFFF"},
+        {"name": "Pure", "primary": "#1A1A1A", "secondary": "#4A4A4A", "accent": "#1ABC9C", "text": "#1A1A1A", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Inter", "Roboto", "Open Sans", "Lato", "Source Sans Pro", "Nunito Sans", "Karla", "IBM Plex Sans"],
+      "created_at": "2025-01-12T10:00:00Z",
+      "updated_at": "2025-01-12T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000023",
+    "fields": {
+      "name": "Spectra",
+      "slug": "spectra",
+      "skin_id": "spc1",
+      "type": "resume",
+      "category": "creative",
+      "html_template": "templates/skins/spectra/template.html",
+      "css_styles": "templates/skins/spectra/styles.css",
+      "is_active": true,
+      "is_new": true,
+      "is_premium": true,
+      "is_ats_friendly": false,
+      "popularity_score": 77,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "projects", "portfolio", "interests", "awards"],
+      "color_schemes": [
+        {"name": "Rainbow", "primary": "#E74C3C", "secondary": "#3498DB", "accent": "#F1C40F", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Prism", "primary": "#9B59B6", "secondary": "#1ABC9C", "accent": "#E67E22", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Neon Lights", "primary": "#00D2FF", "secondary": "#FF00FF", "accent": "#39FF14", "text": "#1A1A2E", "background": "#FFFFFF"},
+        {"name": "Holographic", "primary": "#667EEA", "secondary": "#764BA2", "accent": "#F093FB", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Iridescent", "primary": "#00B894", "secondary": "#E84393", "accent": "#FDCB6E", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Chromatic", "primary": "#FF6B6B", "secondary": "#4ECDC4", "accent": "#FFE66D", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Vivid", "primary": "#FC5C65", "secondary": "#45AAF2", "accent": "#FED330", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Spectrum", "primary": "#A55EEA", "secondary": "#26DE81", "accent": "#FD9644", "text": "#2D3436", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Poppins", "Montserrat", "Quicksand", "Comfortaa", "Nunito", "DM Sans", "Space Grotesk", "Outfit", "Sora"],
+      "created_at": "2025-11-01T10:00:00Z",
+      "updated_at": "2025-11-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000024",
+    "fields": {
+      "name": "Squares",
+      "slug": "squares",
+      "skin_id": "sqr1",
+      "type": "resume",
+      "category": "modern",
+      "html_template": "templates/skins/squares/template.html",
+      "css_styles": "templates/skins/squares/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 73,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects"],
+      "color_schemes": [
+        {"name": "Grid", "primary": "#2C3E50", "secondary": "#3498DB", "accent": "#E74C3C", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Pixel", "primary": "#0984E3", "secondary": "#00CEC9", "accent": "#FDCB6E", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Block", "primary": "#6C5CE7", "secondary": "#A29BFE", "accent": "#FD79A8", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Tile", "primary": "#00B894", "secondary": "#55EFC4", "accent": "#FF7675", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Matrix", "primary": "#2D3436", "secondary": "#636E72", "accent": "#00B894", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Module", "primary": "#E17055", "secondary": "#FAB1A0", "accent": "#0984E3", "text": "#2D3436", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Inter", "Roboto", "Poppins", "DM Sans", "Montserrat", "Work Sans", "Outfit", "Space Grotesk", "Nunito"],
+      "created_at": "2025-04-01T10:00:00Z",
+      "updated_at": "2025-04-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000025",
+    "fields": {
+      "name": "Synergy",
+      "slug": "synergy",
+      "skin_id": "syn1",
+      "type": "resume",
+      "category": "business",
+      "html_template": "templates/skins/synergy/template.html",
+      "css_styles": "templates/skins/synergy/styles.css",
+      "is_active": true,
+      "is_new": true,
+      "is_premium": true,
+      "is_ats_friendly": true,
+      "popularity_score": 85,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects", "references", "awards"],
+      "color_schemes": [
+        {"name": "Collaborate", "primary": "#1B2A4A", "secondary": "#2C3E50", "accent": "#3498DB", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Unite", "primary": "#0C1821", "secondary": "#1B2838", "accent": "#E67E22", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Alliance", "primary": "#1A5276", "secondary": "#21618C", "accent": "#2980B9", "text": "#1B2631", "background": "#FFFFFF"},
+        {"name": "Fusion", "primary": "#145A32", "secondary": "#196F3D", "accent": "#27AE60", "text": "#0B5345", "background": "#FFFFFF"},
+        {"name": "Integrate", "primary": "#4A235A", "secondary": "#6C3483", "accent": "#AF7AC5", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Harmony", "primary": "#1C2833", "secondary": "#2C3E50", "accent": "#1ABC9C", "text": "#1C2833", "background": "#FFFFFF"},
+        {"name": "Convergence", "primary": "#7B241C", "secondary": "#922B21", "accent": "#E74C3C", "text": "#333333", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Montserrat", "Inter", "Roboto", "Lato", "Open Sans", "Poppins", "Source Sans Pro", "Nunito", "Work Sans", "Rubik"],
+      "created_at": "2025-12-01T10:00:00Z",
+      "updated_at": "2025-12-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000026",
+    "fields": {
+      "name": "Valera",
+      "slug": "valera",
+      "skin_id": "trz8",
+      "type": "resume",
+      "category": "professional",
+      "html_template": "templates/skins/valera/template.html",
+      "css_styles": "templates/skins/valera/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 82,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "references"],
+      "color_schemes": [
+        {"name": "Elegant", "primary": "#2C3E50", "secondary": "#34495E", "accent": "#E74C3C", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Formal", "primary": "#1B2A4A", "secondary": "#2C3E50", "accent": "#F39C12", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Dignified", "primary": "#1C2833", "secondary": "#273746", "accent": "#3498DB", "text": "#1C2833", "background": "#FFFFFF"},
+        {"name": "Graceful", "primary": "#4A235A", "secondary": "#6C3483", "accent": "#BB8FCE", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Distinguished", "primary": "#1A5276", "secondary": "#2471A3", "accent": "#5DADE2", "text": "#1B2631", "background": "#FFFFFF"},
+        {"name": "Noble", "primary": "#7B241C", "secondary": "#922B21", "accent": "#D4A373", "text": "#333333", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Roboto", "Inter", "Open Sans", "Lato", "Montserrat", "Source Sans Pro", "Nunito", "PT Sans", "Rubik", "Work Sans"],
+      "created_at": "2025-04-10T10:00:00Z",
+      "updated_at": "2025-04-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000027",
+    "fields": {
+      "name": "Vibes",
+      "slug": "vibes",
+      "skin_id": "trz9",
+      "type": "resume",
+      "category": "creative",
+      "html_template": "templates/skins/vibes/template.html",
+      "css_styles": "templates/skins/vibes/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": false,
+      "popularity_score": 71,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "projects", "portfolio", "interests"],
+      "color_schemes": [
+        {"name": "Good Vibes", "primary": "#00B894", "secondary": "#55EFC4", "accent": "#FDCB6E", "text": "#2D3436", "background": "#FFFFFF", "is_default": true},
+        {"name": "Chill", "primary": "#0984E3", "secondary": "#74B9FF", "accent": "#FD79A8", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Groovy", "primary": "#6C5CE7", "secondary": "#A29BFE", "accent": "#FFEAA7", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Funky", "primary": "#E84393", "secondary": "#FD79A8", "accent": "#00CEC9", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Mellow", "primary": "#E17055", "secondary": "#FAB1A0", "accent": "#00B894", "text": "#2D3436", "background": "#FFFFFF"},
+        {"name": "Zen", "primary": "#636E72", "secondary": "#B2BEC3", "accent": "#00CEC9", "text": "#2D3436", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Quicksand", "Comfortaa", "Poppins", "Nunito", "Montserrat", "DM Sans", "Space Grotesk", "Outfit"],
+      "created_at": "2025-04-15T10:00:00Z",
+      "updated_at": "2025-04-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000028",
+    "fields": {
+      "name": "Vintage",
+      "slug": "vintage",
+      "skin_id": "vin1",
+      "type": "resume",
+      "category": "classic",
+      "html_template": "templates/skins/vintage/template.html",
+      "css_styles": "templates/skins/vintage/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 70,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "references"],
+      "color_schemes": [
+        {"name": "Antique", "primary": "#5D4037", "secondary": "#795548", "accent": "#D4A373", "text": "#3E2723", "background": "#FAF5EF", "is_default": true},
+        {"name": "Sepia", "primary": "#6D4C41", "secondary": "#8D6E63", "accent": "#BCAAA4", "text": "#3E2723", "background": "#FFF8E1"},
+        {"name": "Parchment", "primary": "#4E342E", "secondary": "#6D4C41", "accent": "#A1887F", "text": "#3E2723", "background": "#FFFDE7"},
+        {"name": "Heritage", "primary": "#33691E", "secondary": "#558B2F", "accent": "#8BC34A", "text": "#1B5E20", "background": "#F9FBE7"},
+        {"name": "Victorian", "primary": "#4A148C", "secondary": "#6A1B9A", "accent": "#CE93D8", "text": "#311B92", "background": "#FFF3E0"},
+        {"name": "Retro", "primary": "#BF360C", "secondary": "#E64A19", "accent": "#FF9800", "text": "#3E2723", "background": "#FFF3E0"},
+        {"name": "Rustic", "primary": "#3E2723", "secondary": "#5D4037", "accent": "#8D6E63", "text": "#3E2723", "background": "#EFEBE9"}
+      ],
+      "font_options": ["Playfair Display", "Cormorant Garamond", "Libre Baskerville", "Lora", "Merriweather", "EB Garamond", "Crimson Text", "Old Standard TT", "Spectral", "Cardo"],
+      "created_at": "2025-05-01T10:00:00Z",
+      "updated_at": "2025-05-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000029",
+    "fields": {
+      "name": "Atlas",
+      "slug": "atlas",
+      "skin_id": "atl1",
+      "type": "resume",
+      "category": "professional",
+      "html_template": "templates/skins/atlas/template.html",
+      "css_styles": "templates/skins/atlas/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 81,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects", "references"],
+      "color_schemes": [
+        {"name": "Navigator", "primary": "#1B3A5C", "secondary": "#2C5F8A", "accent": "#E8A838", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Explorer", "primary": "#2E4057", "secondary": "#3D5A80", "accent": "#EE6C4D", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Cartographer", "primary": "#1A3C40", "secondary": "#2D6A4F", "accent": "#D4A373", "text": "#2C3E50", "background": "#FFFFFF"},
+        {"name": "Voyager", "primary": "#3A2E5C", "secondary": "#5A4E8A", "accent": "#F1C40F", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Compass", "primary": "#37474F", "secondary": "#546E7A", "accent": "#26C6DA", "text": "#263238", "background": "#FFFFFF"},
+        {"name": "Meridian", "primary": "#4A235A", "secondary": "#6C3483", "accent": "#AF7AC5", "text": "#333333", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Inter", "Roboto", "Open Sans", "Lato", "Montserrat", "Source Sans Pro", "Nunito", "Poppins", "Raleway", "PT Sans"],
+      "created_at": "2025-05-15T10:00:00Z",
+      "updated_at": "2025-05-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000030",
+    "fields": {
+      "name": "Nexus",
+      "slug": "nexus",
+      "skin_id": "nex1",
+      "type": "resume",
+      "category": "modern",
+      "html_template": "templates/skins/nexus/template.html",
+      "css_styles": "templates/skins/nexus/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": true,
+      "is_ats_friendly": true,
+      "popularity_score": 84,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects", "awards"],
+      "color_schemes": [
+        {"name": "Connected", "primary": "#0D47A1", "secondary": "#1565C0", "accent": "#00BCD4", "text": "#212121", "background": "#FFFFFF", "is_default": true},
+        {"name": "Hub", "primary": "#1B5E20", "secondary": "#2E7D32", "accent": "#FFC107", "text": "#1B5E20", "background": "#FFFFFF"},
+        {"name": "Pathway", "primary": "#4A148C", "secondary": "#6A1B9A", "accent": "#E040FB", "text": "#311B92", "background": "#FFFFFF"},
+        {"name": "Junction", "primary": "#BF360C", "secondary": "#E64A19", "accent": "#FF9800", "text": "#3E2723", "background": "#FFFFFF"},
+        {"name": "Crossroads", "primary": "#263238", "secondary": "#37474F", "accent": "#26A69A", "text": "#263238", "background": "#FFFFFF"},
+        {"name": "Link", "primary": "#0097A7", "secondary": "#00ACC1", "accent": "#FFD54F", "text": "#004D40", "background": "#FFFFFF"},
+        {"name": "Bridge", "primary": "#5D4037", "secondary": "#795548", "accent": "#FF7043", "text": "#3E2723", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Poppins", "Inter", "Montserrat", "DM Sans", "Nunito", "Work Sans", "Outfit", "Space Grotesk", "Sora", "Rubik"],
+      "created_at": "2025-06-15T10:00:00Z",
+      "updated_at": "2025-06-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000031",
+    "fields": {
+      "name": "Horizon",
+      "slug": "horizon",
+      "skin_id": "hor1",
+      "type": "resume",
+      "category": "modern",
+      "html_template": "templates/skins/horizon/template.html",
+      "css_styles": "templates/skins/horizon/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 79,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects", "interests"],
+      "color_schemes": [
+        {"name": "Sunrise", "primary": "#FF6F00", "secondary": "#FF8F00", "accent": "#FFC107", "text": "#333333", "background": "#FFFFFF", "is_default": true},
+        {"name": "Sunset", "primary": "#D32F2F", "secondary": "#E53935", "accent": "#FF9800", "text": "#333333", "background": "#FFFFFF"},
+        {"name": "Twilight", "primary": "#283593", "secondary": "#3949AB", "accent": "#7C4DFF", "text": "#1A237E", "background": "#FFFFFF"},
+        {"name": "Dawn", "primary": "#00695C", "secondary": "#00897B", "accent": "#FFD54F", "text": "#004D40", "background": "#FFFFFF"},
+        {"name": "Dusk", "primary": "#4E342E", "secondary": "#6D4C41", "accent": "#FFAB91", "text": "#3E2723", "background": "#FFFFFF"},
+        {"name": "Skyline", "primary": "#0277BD", "secondary": "#0288D1", "accent": "#4FC3F7", "text": "#01579B", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Inter", "Poppins", "Nunito", "Roboto", "DM Sans", "Work Sans", "Outfit", "Space Grotesk", "Sora"],
+      "created_at": "2025-07-15T10:00:00Z",
+      "updated_at": "2025-07-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000032",
+    "fields": {
+      "name": "Zenith",
+      "slug": "zenith",
+      "skin_id": "zen1",
+      "type": "resume",
+      "category": "professional",
+      "html_template": "templates/skins/zenith/template.html",
+      "css_styles": "templates/skins/zenith/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": true,
+      "is_ats_friendly": true,
+      "popularity_score": 88,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects", "references", "awards"],
+      "color_schemes": [
+        {"name": "Peak", "primary": "#1A237E", "secondary": "#283593", "accent": "#FFD600", "text": "#212121", "background": "#FFFFFF", "is_default": true},
+        {"name": "Summit", "primary": "#01579B", "secondary": "#0277BD", "accent": "#00E5FF", "text": "#01579B", "background": "#FFFFFF"},
+        {"name": "Apex", "primary": "#1B5E20", "secondary": "#2E7D32", "accent": "#76FF03", "text": "#1B5E20", "background": "#FFFFFF"},
+        {"name": "Pinnacle", "primary": "#311B92", "secondary": "#4527A0", "accent": "#B388FF", "text": "#311B92", "background": "#FFFFFF"},
+        {"name": "Crown", "primary": "#B71C1C", "secondary": "#C62828", "accent": "#FFD740", "text": "#B71C1C", "background": "#FFFFFF"},
+        {"name": "Acme", "primary": "#212121", "secondary": "#424242", "accent": "#00BFA5", "text": "#212121", "background": "#FFFFFF"},
+        {"name": "Crest", "primary": "#004D40", "secondary": "#00695C", "accent": "#64FFDA", "text": "#004D40", "background": "#FFFFFF"},
+        {"name": "Vertex", "primary": "#3E2723", "secondary": "#4E342E", "accent": "#FF6E40", "text": "#3E2723", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Montserrat", "Inter", "Roboto", "Lato", "Open Sans", "Poppins", "Source Sans Pro", "Nunito", "Work Sans", "Rubik"],
+      "created_at": "2025-08-15T10:00:00Z",
+      "updated_at": "2025-08-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000033",
+    "fields": {
+      "name": "Clarity",
+      "slug": "clarity",
+      "skin_id": "clr1",
+      "type": "resume",
+      "category": "simple",
+      "html_template": "templates/skins/clarity/template.html",
+      "css_styles": "templates/skins/clarity/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": false,
+      "is_ats_friendly": true,
+      "popularity_score": 83,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications"],
+      "color_schemes": [
+        {"name": "Crystal", "primary": "#37474F", "secondary": "#546E7A", "accent": "#26C6DA", "text": "#263238", "background": "#FFFFFF", "is_default": true},
+        {"name": "Transparent", "primary": "#455A64", "secondary": "#78909C", "accent": "#4DB6AC", "text": "#37474F", "background": "#FFFFFF"},
+        {"name": "Lucid", "primary": "#1565C0", "secondary": "#1976D2", "accent": "#42A5F5", "text": "#0D47A1", "background": "#FFFFFF"},
+        {"name": "Pristine", "primary": "#2E7D32", "secondary": "#388E3C", "accent": "#66BB6A", "text": "#1B5E20", "background": "#FFFFFF"},
+        {"name": "Pure", "primary": "#333333", "secondary": "#666666", "accent": "#E53935", "text": "#333333", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Inter", "Roboto", "Open Sans", "Lato", "Source Sans Pro", "Nunito Sans", "IBM Plex Sans", "Karla"],
+      "created_at": "2025-09-15T10:00:00Z",
+      "updated_at": "2025-09-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "templates_library.documenttemplate",
+    "pk": "a0000001-0000-0000-0000-000000000034",
+    "fields": {
+      "name": "Elevate",
+      "slug": "elevate",
+      "skin_id": "elv1",
+      "type": "resume",
+      "category": "business",
+      "html_template": "templates/skins/elevate/template.html",
+      "css_styles": "templates/skins/elevate/styles.css",
+      "is_active": true,
+      "is_new": false,
+      "is_premium": true,
+      "is_ats_friendly": true,
+      "popularity_score": 86,
+      "supported_sections": ["personal_info", "summary", "experience", "education", "skills", "languages", "certifications", "projects", "references", "awards"],
+      "color_schemes": [
+        {"name": "Ascend", "primary": "#0D47A1", "secondary": "#1565C0", "accent": "#FF6F00", "text": "#212121", "background": "#FFFFFF", "is_default": true},
+        {"name": "Rise", "primary": "#1B5E20", "secondary": "#2E7D32", "accent": "#FFC107", "text": "#1B5E20", "background": "#FFFFFF"},
+        {"name": "Uplift", "primary": "#4A148C", "secondary": "#6A1B9A", "accent": "#EA80FC", "text": "#311B92", "background": "#FFFFFF"},
+        {"name": "Soar", "primary": "#B71C1C", "secondary": "#C62828", "accent": "#FFB300", "text": "#B71C1C", "background": "#FFFFFF"},
+        {"name": "Climb", "primary": "#263238", "secondary": "#37474F", "accent": "#00BFA5", "text": "#263238", "background": "#FFFFFF"},
+        {"name": "Empower", "primary": "#004D40", "secondary": "#00695C", "accent": "#FF9E80", "text": "#004D40", "background": "#FFFFFF"},
+        {"name": "Advance", "primary": "#1A237E", "secondary": "#283593", "accent": "#448AFF", "text": "#1A237E", "background": "#FFFFFF"}
+      ],
+      "font_options": ["Montserrat", "Inter", "Roboto", "Lato", "Open Sans", "Poppins", "Source Sans Pro", "Nunito", "Work Sans", "Rubik"],
+      "created_at": "2025-10-15T10:00:00Z",
+      "updated_at": "2025-10-15T10:00:00Z"
+    }
+  }
+]

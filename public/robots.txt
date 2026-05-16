@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /build-resume/
+Disallow: /build-cv/
+Disallow: /build-letter/
+Disallow: /dashboard/
+Disallow: /account/
+Disallow: /my-documents/
+Disallow: /signin/
+Disallow: /signup/
+Disallow: /verify-email/
+Disallow: /forgot-password/
+Disallow: /reset-password/
+
+Sitemap: https://resumer.com/sitemap.xml

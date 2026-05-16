@@ -1,0 +1,47 @@
+{
+  "page_title": "CV Templates",
+  "page_subtitle": "Choose from our collection of professionally designed templates",
+  "categories": {
+    "all": "All Templates",
+    "professional": "Professional",
+    "modern": "Modern",
+    "creative": "Creative",
+    "simple": "Simple",
+    "academic": "Academic",
+    "technical": "Technical",
+    "executive": "Executive"
+  },
+  "filters": {
+    "label": "Filter by",
+    "category": "Category",
+    "color": "Colour",
+    "style": "Style",
+    "sort_by": "Sort by",
+    "sort_popular": "Most Popular",
+    "sort_newest": "Newest",
+    "sort_name": "Name (A-Z)",
+    "clear_filters": "Clear Filters",
+    "results_count": "{{count}} template found",
+    "results_count_plural": "{{count}} templates found",
+    "no_results": "No templates match your filters. Try adjusting your criteria."
+  },
+  "card": {
+    "use_template": "Use This Template",
+    "preview": "Preview",
+    "premium_badge": "Premium",
+    "popular_badge": "Popular",
+    "new_badge": "New"
+  },
+  "descriptions": {
+    "professional_classic": "A timeless, clean layout perfect for corporate and business roles. Balanced sections with a traditional structure.",
+    "modern_minimal": "Sleek and contemporary design with generous whitespace. Ideal for tech, design, and startup roles.",
+    "creative_bold": "Eye-catching layout with bold typography and colour accents. Great for creative professionals and designers.",
+    "simple_clean": "Straightforward and easy to read. Focuses on content over design. Works well for any industry.",
+    "academic_research": "Structured layout optimised for academic CVs with sections for publications, research, and teaching.",
+    "technical_developer": "Developer-friendly template with sections for projects, tech stack, and open-source contributions.",
+    "executive_suite": "Premium design tailored for senior executives and leadership roles. Highlights achievements and impact.",
+    "two_column": "Efficient two-column layout that maximizes space while maintaining readability.",
+    "infographic": "Visual CV with skill bars, timelines, and icons. Stands out in creative industries.",
+    "compact": "Space-efficient design that fits more content on a single page without sacrificing readability."
+  }
+}

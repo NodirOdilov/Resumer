@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cover Letter - {{ contact.first_name }} {{ contact.last_name }}</title>
+<style>
+    @page {
+        size: A4;
+        margin: {{ settings.margins|default:"10mm 10mm 10mm 10mm" }};
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: {{ settings.font_family|default:"'Noto Sans', sans-serif" }};
+        font-size: {{ settings.font_size|default:"10.5pt" }};
+        line-height: {{ settings.line_spacing|default:"1.6" }};
+        color: {{ settings.text_color|default:"#333" }};
+    }
+    .page-wrapper { display: flex; min-height: 100%; }
+    .sidebar {
+        width: 30%;
+        background-color: {{ settings.primary_color|default:"#2c3e50" }};
+        color: #ffffff;
+        padding: 24px 16px;
+        min-height: 100vh;
+    }
+    .sidebar h1 {
+        font-size: 1.4em;
+        margin-bottom: 4px;
+        border-bottom: 2px solid rgba(255,255,255,0.3);
+        padding-bottom: 8px;
+    }
+    .sidebar .contact-item {
+        font-size: 0.83em;
+        margin-bottom: 4px;
+        word-break: break-all;
+    }
+    .sidebar .contact-item a { color: #ffffff; text-decoration: none; }
+    .sidebar .section-title {
+        font-size: 0.78em;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-top: 18px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid rgba(255,255,255,0.25);
+        padding-bottom: 4px;
+        color: #3498db;
+    }
+    .main-content {
+        width: 70%;
+        padding: 28px 24px 24px 30px;
+    }
+    .date { font-size: 0.9em; color: #777; margin-bottom: 16px; }
+    .recipient { margin-bottom: 16px; font-size: 0.93em; }
+    .recipient p { margin-bottom: 2px; }
+    .greeting { font-size: 1em; font-weight: 600; margin-bottom: 12px; color: {{ settings.primary_color|default:"#2c3e50" }}; }
+    .body-text { margin-bottom: 12px; font-size: 0.95em; text-align: justify; }
+    .closing { margin-top: 20px; font-size: 0.95em; }
+    .signature {
+        margin-top: 24px;
+        padding-top: 12px;
+        border-top: 2px solid {{ settings.primary_color|default:"#2c3e50" }};
+    }
+    .signature .name { font-size: 1.1em; font-weight: 700; color: {{ settings.primary_color|default:"#2c3e50" }}; }
+</style>
+</head>
+<body>
+<div class="page-wrapper">
+    <aside class="sidebar">
+        <h1>{{ contact.first_name }}<br>{{ contact.last_name }}</h1>
+
+        <div class="section-title">Contact</div>
+        {% if contact.email %}<div class="contact-item">{{ contact.email }}</div>{% endif %}
+        {% if contact.phone %}<div class="contact-item">{{ contact.phone }}</div>{% endif %}
+        {% if contact.address %}<div class="contact-item">{{ contact.address }}</div>{% endif %}
+        {% if contact.city or contact.state or contact.zip_code %}
+        <div class="contact-item">{{ contact.city }}{% if contact.state %}, {{ contact.state }}{% endif %} {{ contact.zip_code }}</div>
+        {% endif %}
+        {% if contact.country %}<div class="contact-item">{{ contact.country }}</div>{% endif %}
+        {% if contact.linkedin_url %}<div class="contact-item"><a href="{{ contact.linkedin_url }}">LinkedIn</a></div>{% endif %}
+        {% if contact.website_url %}<div class="contact-item"><a href="{{ contact.website_url }}">{{ contact.website_url }}</a></div>{% endif %}
+    </aside>
+
+    <main class="main-content">
+        <div class="date">{{ date }}</div>
+
+<div class="recipient">
+    {% if recipient_name %}<p><strong>{{ recipient_name }}</strong></p>{% endif %}
+    {% if recipient_title %}<p>{{ recipient_title }}</p>{% endif %}
+    {% if company_name %}<p>{{ company_name }}</p>{% endif %}
+    {% if company_address %}<p>{{ company_address }}</p>{% endif %}
+</div>
+
+<p class="greeting">Dear {{ recipient_name|default:"Hiring Manager" }},</p>
+
+{% if opening_paragraph %}
+<p class="body-text">{{ opening_paragraph }}</p>
+{% endif %}
+
+{% if body_paragraph_1 %}
+<p class="body-text">{{ body_paragraph_1 }}</p>
+{% endif %}
+
+{% if body_paragraph_2 %}
+<p class="body-text">{{ body_paragraph_2 }}</p>
+{% endif %}
+
+{% if body_paragraph_3 %}
+<p class="body-text">{{ body_paragraph_3 }}</p>
+{% endif %}
+
+{% if closing_paragraph %}
+<p class="body-text">{{ closing_paragraph }}</p>
+{% endif %}
+
+<div class="closing">
+    <p>{{ closing_salutation|default:"Sincerely" }},</p>
+</div>
+
+        <div class="signature">
+    <p class="name">{{ contact.first_name }} {{ contact.last_name }}</p>
+    {% if contact.phone %}<p style="font-size:0.85em; color:#777;">{{ contact.phone }}</p>{% endif %}
+    {% if contact.email %}<p style="font-size:0.85em; color:#777;">{{ contact.email }}</p>{% endif %}
+</div>
+    </main>
+</div>
+</body>
+</html>

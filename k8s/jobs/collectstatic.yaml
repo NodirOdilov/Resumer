@@ -1,0 +1,55 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: resumer-collectstatic
+  namespace: resumer
+  labels:
+    app.kubernetes.io/name: resumer-collectstatic
+    app.kubernetes.io/component: collectstatic
+    app.kubernetes.io/part-of: resumer-platform
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
+spec:
+  backoffLimit: 2
+  activeDeadlineSeconds: 180
+  ttlSecondsAfterFinished: 600
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: resumer-collectstatic
+        app.kubernetes.io/component: collectstatic
+    spec:
+      restartPolicy: OnFailure
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        runAsGroup: 1000
+      containers:
+        - name: collectstatic
+          image: ghcr.io/OWNER/myresumer/backend:latest
+          imagePullPolicy: Always
+          command:
+            - python
+            - manage.py
+            - collectstatic
+            - --noinput
+          envFrom:
+            - configMapRef:
+                name: resumer-config
+            - secretRef:
+                name: resumer-secrets
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 300m
+              memory: 512Mi
+          volumeMounts:
+            - name: static
+              mountPath: /app/staticfiles
+      volumes:
+        - name: static
+          persistentVolumeClaim:
+            claimName: resumer-static-pvc

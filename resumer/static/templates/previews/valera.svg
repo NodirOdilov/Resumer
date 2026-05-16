@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 297" width="210" height="297">
+  <!-- Background -->
+  <rect width="210" height="297" fill="white"/>
+
+  <!-- Template: valera -->
+    <!-- Main content -->
+    <rect x="18" y="18" width="70" height="8" rx="2" fill="#7E22CE"/>
+    <rect x="18" y="34" width="110" height="3" rx="1.5" fill="#9CA3AF" opacity="0.5"/>
+    <rect x="18" y="41" width="66.0" height="3" rx="1.5" fill="#9CA3AF" opacity="0.5"/>
+    <rect x="18" y="56" width="45" height="5" rx="2.5" fill="#A855F7" opacity="0.8"/>
+    <rect x="18" y="68" width="110" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="76" width="110" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="84" width="110" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="92" width="110" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="100" width="66.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="112" width="40" height="5" rx="2.5" fill="#A855F7" opacity="0.8"/>
+    <rect x="18" y="124" width="110" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="132" width="110" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="140" width="110" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="148" width="110" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="156" width="66.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="170" width="35" height="5" rx="2.5" fill="#A855F7" opacity="0.8"/>
+    <rect x="18" y="182" width="110" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="190" width="110" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="198" width="110" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="206" width="66.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <!-- Sidebar right -->
+    <rect x="140" y="0" width="70" height="297" fill="#A855F7"/>
+    <circle cx="175" cy="40" r="16" fill="#FAF5FF" opacity="0.3"/>
+    <rect x="150" y="68" width="50" height="3" rx="1.5" fill="#FAF5FF" opacity="0.5"/>
+    <rect x="150" y="76" width="50" height="3" rx="1.5" fill="#FAF5FF" opacity="0.5"/>
+    <rect x="150" y="84" width="30.0" height="3" rx="1.5" fill="#FAF5FF" opacity="0.5"/>
+    <rect x="150" y="100" width="28" height="4" rx="2" fill="#FAF5FF" opacity="0.7"/>
+    <rect x="150" y="110" width="46" height="3" rx="1.5" fill="#FAF5FF" opacity="0.5"/>
+    <rect x="150" y="118" width="46" height="3" rx="1.5" fill="#FAF5FF" opacity="0.5"/>
+    <rect x="150" y="126" width="46" height="3" rx="1.5" fill="#FAF5FF" opacity="0.5"/>
+    <rect x="150" y="134" width="27.599999999999998" height="3" rx="1.5" fill="#FAF5FF" opacity="0.5"/>
+    <rect x="150" y="152" width="32" height="4" rx="2" fill="#FAF5FF" opacity="0.7"/>
+    <rect x="150" y="162" width="46" height="3" rx="1.5" fill="#FAF5FF" opacity="0.5"/>
+    <rect x="150" y="170" width="46" height="3" rx="1.5" fill="#FAF5FF" opacity="0.5"/>
+    <rect x="150" y="178" width="46" height="3" rx="1.5" fill="#FAF5FF" opacity="0.5"/>
+    <rect x="150" y="186" width="46" height="3" rx="1.5" fill="#FAF5FF" opacity="0.5"/>
+    <rect x="150" y="194" width="27.599999999999998" height="3" rx="1.5" fill="#FAF5FF" opacity="0.5"/>
+
+  <!-- Template name label -->
+  <rect x="0" y="280" width="210" height="17" fill="white" opacity="0.85"/>
+  <text x="105" y="293" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="600"
+        fill="#A855F7" text-anchor="middle" letter-spacing="1.5">
+    VALERA
+  </text>
+</svg>

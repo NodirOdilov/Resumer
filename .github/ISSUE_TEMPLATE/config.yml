@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Документация платформы
+    url: https://github.com/NodirOdilov/Resumer/blob/main/README.md
+    about: Обзор, быстрый старт, архитектура
+  - name: Telegram Bot
+    url: https://github.com/NodirOdilov/Resumer/blob/main/docs/TELEGRAM.md
+    about: Бот, deep link, API привязки
+  - name: Mobile App
+    url: https://github.com/NodirOdilov/Resumer/blob/main/docs/MOBILE.md
+    about: Expo, сборка, переменные окружения
+  - name: Сообщение об уязвимости
+    url: https://github.com/NodirOdilov/Resumer/blob/main/SECURITY.md
+    about: Не создавайте публичный issue — следуйте SECURITY.md

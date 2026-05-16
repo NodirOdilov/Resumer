@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Resumer",
+    "slug": "resumer-mobile",
+    "version": "2.7.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "resumer",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0D47A1"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.resumer.mobile",
+      "buildNumber": "270"
+    },
+    "android": {
+      "versionCode": 270,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0D47A1"
+      },
+      "package": "com.resumer.mobile"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": ["expo-router", "expo-secure-store"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "apiUrl": "http://localhost:8000/api/v1"
+    }
+  }
+}

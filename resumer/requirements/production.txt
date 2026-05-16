@@ -1,0 +1,13 @@
+-r base.txt
+
+# Production server
+gunicorn>=23.0
+uvicorn[standard]>=0.32
+
+# Stripe
+stripe>=10.0
+
+# Railway / PaaS
+dj-database-url>=2.3
+whitenoise>=6.8
+cryptography>=44.0

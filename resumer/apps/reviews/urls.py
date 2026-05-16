@@ -1,0 +1,15 @@
+from __future__ import annotations
+
+from django.urls import include, path
+from rest_framework.routers import DefaultRouter
+
+from apps.reviews.views import ReviewViewSet
+
+router = DefaultRouter()
+router.register("", ReviewViewSet, basename="reviews")
+
+app_name = "reviews"
+
+urlpatterns = [
+    path("", include(router.urls)),
+]

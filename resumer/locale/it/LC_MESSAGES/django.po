@@ -1,0 +1,240 @@
+# Resumer translations for Italian
+# Copyright (C) 2026 Resumer
+msgid ""
+msgstr ""
+"Project-Id-Version: Resumer 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-19 00:00+0000\n"
+"PO-Revision-Date: 2026-03-19 00:00+0000\n"
+"Last-Translator: Resumer Team\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Welcome to Resumer"
+msgstr "Benvenuto su Resumer"
+
+msgid "Professional Resume Builder"
+msgstr "Creatore di curriculum professionale"
+
+msgid "Create professional resumes, CVs, and cover letters"
+msgstr "Crea curriculum, CV e lettere di presentazione professionali"
+
+msgid "Sign In"
+msgstr "Accedi"
+
+msgid "Sign Up"
+msgstr "Registrati"
+
+msgid "Log Out"
+msgstr "Esci"
+
+msgid "Email Address"
+msgstr "Indirizzo e-mail"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "First Name"
+msgstr "Nome"
+
+msgid "Last Name"
+msgstr "Cognome"
+
+msgid "Phone"
+msgstr "Telefono"
+
+msgid "This field is required."
+msgstr "Questo campo \u00e8 obbligatorio."
+
+msgid "Please enter a valid email address."
+msgstr "Inserisci un indirizzo e-mail valido."
+
+msgid "Password must be at least 8 characters."
+msgstr "La password deve contenere almeno 8 caratteri."
+
+msgid "Passwords do not match."
+msgstr "Le password non corrispondono."
+
+msgid "Account created successfully."
+msgstr "Account creato con successo."
+
+msgid "Email verification sent."
+msgstr "E-mail di verifica inviata."
+
+msgid "Password reset email sent."
+msgstr "E-mail di reimpostazione della password inviata."
+
+msgid "Password changed successfully."
+msgstr "Password modificata con successo."
+
+msgid "Resume"
+msgstr "Curriculum"
+
+msgid "CV"
+msgstr "Curriculum vitae"
+
+msgid "Cover Letter"
+msgstr "Lettera di presentazione"
+
+msgid "Templates"
+msgstr "Modelli"
+
+msgid "Examples"
+msgstr "Esempi"
+
+msgid "Dashboard"
+msgstr "Pannello di controllo"
+
+msgid "My Documents"
+msgstr "I miei documenti"
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid "Profile"
+msgstr "Profilo"
+
+msgid "Download"
+msgstr "Scarica"
+
+msgid "Save"
+msgstr "Salva"
+
+msgid "Delete"
+msgstr "Elimina"
+
+msgid "Edit"
+msgstr "Modifica"
+
+msgid "Duplicate"
+msgstr "Duplica"
+
+msgid "Preview"
+msgstr "Anteprima"
+
+msgid "Draft"
+msgstr "Bozza"
+
+msgid "Complete"
+msgstr "Completato"
+
+msgid "Downloaded"
+msgstr "Scaricato"
+
+msgid "Contact Information"
+msgstr "Informazioni di contatto"
+
+msgid "Professional Summary"
+msgstr "Profilo professionale"
+
+msgid "Work Experience"
+msgstr "Esperienza lavorativa"
+
+msgid "Education"
+msgstr "Istruzione"
+
+msgid "Skills"
+msgstr "Competenze"
+
+msgid "Languages"
+msgstr "Lingue"
+
+msgid "Certificates"
+msgstr "Certificati"
+
+msgid "Projects"
+msgstr "Progetti"
+
+msgid "Awards"
+msgstr "Premi e riconoscimenti"
+
+msgid "Volunteer Experience"
+msgstr "Esperienza di volontariato"
+
+msgid "Hobbies & Interests"
+msgstr "Hobby e interessi"
+
+msgid "Custom Section"
+msgstr "Sezione personalizzata"
+
+msgid "PDF Document"
+msgstr "Documento PDF"
+
+msgid "Word Document"
+msgstr "Documento Word"
+
+msgid "Plain Text"
+msgstr "Testo semplice"
+
+msgid "Document generated successfully."
+msgstr "Documento generato con successo."
+
+msgid "Document not found."
+msgstr "Documento non trovato."
+
+msgid "Permission denied."
+msgstr "Accesso negato."
+
+msgid "Subscription"
+msgstr "Abbonamento"
+
+msgid "Payment"
+msgstr "Pagamento"
+
+msgid "Invoice"
+msgstr "Fattura"
+
+msgid "Trial"
+msgstr "Prova"
+
+msgid "Active"
+msgstr "Attivo"
+
+msgid "Canceled"
+msgstr "Annullato"
+
+msgid "Expired"
+msgstr "Scaduto"
+
+msgid "Your trial expires in %(days)d days."
+msgstr "La tua prova scade tra %(days)d giorni."
+
+msgid "Subscription confirmed."
+msgstr "Abbonamento confermato."
+
+msgid "Payment successful."
+msgstr "Pagamento riuscito."
+
+msgid "Search"
+msgstr "Cerca"
+
+msgid "No results found."
+msgstr "Nessun risultato trovato."
+
+msgid "Page not found."
+msgstr "Pagina non trovata."
+
+msgid "Server error."
+msgstr "Errore del server."
+
+msgid "Privacy Policy"
+msgstr "Informativa sulla privacy"
+
+msgid "Terms of Service"
+msgstr "Termini di servizio"
+
+msgid "Cookie Policy"
+msgstr "Politica sui cookie"
+
+msgid "About Us"
+msgstr "Chi siamo"
+
+msgid "Contact Us"
+msgstr "Contattaci"
+
+msgid "All rights reserved."
+msgstr "Tutti i diritti riservati."

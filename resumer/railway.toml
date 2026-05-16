@@ -1,0 +1,12 @@
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "./Dockerfile"
+
+# Run migrations and collect static once per release, then start gunicorn.
+# `python -m` ensures we use the venv's interpreter regardless of cwd.
+[deploy]
+startCommand = "python manage.py migrate --noinput && python manage.py collectstatic --noinput && python manage.py demo_init && gunicorn config.wsgi:application --bind 0.0.0.0:$PORT --workers 2 --worker-class gthread --threads 2 --timeout 120 --access-logfile - --error-logfile -"
+healthcheckPath = "/health/"
+healthcheckTimeout = 30
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 5

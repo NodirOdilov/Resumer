@@ -1,0 +1,73 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: resumer
+
+commonLabels:
+  app.kubernetes.io/managed-by: kustomize
+  app.kubernetes.io/part-of: resumer-platform
+
+resources:
+  # Namespace
+  - namespace.yaml
+
+  # Configuration
+  - configmap.yaml
+  - secrets.yaml
+
+  # Backend (Django API)
+  - django-deployment.yaml
+  - django-service.yaml
+  - django-hpa.yaml
+
+  # Backend (legacy subdirectory)
+  - backend/deployment.yaml
+  - backend/service.yaml
+  - backend/hpa.yaml
+
+  # Frontend (Next.js)
+  - nextjs-deployment.yaml
+  - nextjs-service.yaml
+  - nextjs-hpa.yaml
+
+  # Frontend (legacy subdirectory)
+  - frontend/deployment.yaml
+  - frontend/service.yaml
+  - frontend/hpa.yaml
+
+  # Celery Workers
+  - celery-deployment.yaml
+  - celery-beat-deployment.yaml
+  - celery-hpa.yaml
+
+  # Celery (legacy subdirectory)
+  - celery/deployment-worker.yaml
+  - celery/deployment-beat.yaml
+  - celery/hpa.yaml
+
+  # Data Stores
+  - postgres-statefulset.yaml
+  - redis-deployment.yaml
+  - elasticsearch-statefulset.yaml
+
+  # Ingress
+  - ingress.yaml
+
+  # TLS / cert-manager
+  - cert-manager/cluster-issuer.yaml
+  - cert-manager/certificate.yaml
+
+  # Jobs
+  - jobs/migrate.yaml
+  - jobs/collectstatic.yaml
+  - jobs/seed.yaml
+
+images:
+  - name: resumer/api
+    newTag: latest
+  - name: resumer/frontend
+    newTag: latest
+  - name: ghcr.io/OWNER/myresumer/backend
+    newTag: latest
+  - name: ghcr.io/OWNER/myresumer/frontend
+    newTag: latest

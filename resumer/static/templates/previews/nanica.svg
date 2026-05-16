@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 297" width="210" height="297">
+  <!-- Background -->
+  <rect width="210" height="297" fill="white"/>
+
+  <!-- Template: nanica -->
+    <!-- Ultra minimal -->
+    <rect x="30" y="22" width="90" height="8" rx="2" fill="#065F46"/>
+    <rect x="30" y="36" width="60.0" height="3" rx="1.5" fill="#9CA3AF" opacity="0.5"/>
+    <line x1="30" y1="50" x2="180" y2="50" stroke="#E5E7EB" stroke-width="0.5"/>
+    <rect x="30" y="60" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="30" y="68" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="30" y="76" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="30" y="84" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="30" y="92" width="90.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <line x1="30" y1="110" x2="180" y2="110" stroke="#E5E7EB" stroke-width="0.5"/>
+    <rect x="30" y="120" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="30" y="128" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="30" y="136" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="30" y="144" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="30" y="152" width="90.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <line x1="30" y1="170" x2="180" y2="170" stroke="#E5E7EB" stroke-width="0.5"/>
+    <rect x="30" y="180" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="30" y="188" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="30" y="196" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="30" y="204" width="90.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <line x1="30" y1="220" x2="180" y2="220" stroke="#E5E7EB" stroke-width="0.5"/>
+    <rect x="30" y="230" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="30" y="238" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="30" y="246" width="90.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+
+  <!-- Template name label -->
+  <rect x="0" y="280" width="210" height="17" fill="white" opacity="0.85"/>
+  <text x="105" y="293" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="600"
+        fill="#10B981" text-anchor="middle" letter-spacing="1.5">
+    NANICA
+  </text>
+</svg>

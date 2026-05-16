@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 297" width="210" height="297">
+  <!-- Background -->
+  <rect width="210" height="297" fill="white"/>
+
+  <!-- Template: modern -->
+    <!-- Header -->
+    <rect x="0" y="0" width="210" height="45" fill="#2563EB"/>
+    <rect x="18" y="12" width="75" height="8" rx="2" fill="white" opacity="0.9"/>
+    <rect x="18" y="26" width="72.0" height="3" rx="1.5" fill="white" opacity="0.5"/>
+    <!-- Two columns -->
+    <line x1="105" y1="55" x2="105" y2="280" stroke="#E5E7EB" stroke-width="0.5" stroke-dasharray="2,2"/>
+    <!-- Left column -->
+    <rect x="18" y="58" width="35" height="5" rx="2.5" fill="#2563EB" opacity="0.8"/>
+    <rect x="18" y="70" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="78" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="86" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="94" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="102" width="46.8" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="118" width="30" height="5" rx="2.5" fill="#2563EB" opacity="0.8"/>
+    <rect x="18" y="130" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="138" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="146" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="154" width="46.8" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="168" width="28" height="5" rx="2.5" fill="#2563EB" opacity="0.8"/>
+    <rect x="18" y="180" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="188" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="196" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="204" width="46.8" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <!-- Right column -->
+    <rect x="114" y="58" width="35" height="5" rx="2.5" fill="#2563EB" opacity="0.8"/>
+    <rect x="114" y="70" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="114" y="78" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="114" y="86" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="114" y="94" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="114" y="102" width="46.8" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="114" y="118" width="32" height="5" rx="2.5" fill="#2563EB" opacity="0.8"/>
+    <rect x="114" y="130" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="114" y="138" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="114" y="146" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="114" y="154" width="46.8" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="114" y="168" width="30" height="5" rx="2.5" fill="#2563EB" opacity="0.8"/>
+    <rect x="114" y="180" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="114" y="188" width="78" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="114" y="196" width="46.8" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+
+  <!-- Template name label -->
+  <rect x="0" y="280" width="210" height="17" fill="white" opacity="0.85"/>
+  <text x="105" y="293" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="600"
+        fill="#2563EB" text-anchor="middle" letter-spacing="1.5">
+    MODERN
+  </text>
+</svg>

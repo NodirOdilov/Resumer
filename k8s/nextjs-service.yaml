@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: resumer-frontend
+  namespace: resumer
+  labels:
+    app.kubernetes.io/name: resumer-frontend
+    app.kubernetes.io/component: frontend
+    app.kubernetes.io/part-of: resumer-platform
+spec:
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/name: resumer-frontend
+  ports:
+    - port: 3000
+      targetPort: 3000
+      protocol: TCP
+      name: http

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#2E7D32" stroke-width="3"/>
+  <circle cx="60" cy="60" r="48" fill="#E8F5E9"/>
+  <text x="60" y="52" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32" text-anchor="middle">PARWCC</text>
+  <text x="60" y="70" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#388E3C" text-anchor="middle">Certified</text>
+  <text x="60" y="84" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#388E3C" text-anchor="middle">Partner</text>
+</svg>

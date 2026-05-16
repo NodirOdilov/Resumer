@@ -1,0 +1,3 @@
+# Placeholder so the workflows folder is tracked in git.
+# CI/CD via GitHub Actions has been disabled — Vercel handles auto-deploy
+# on every push. Re-add workflow files here when production CI is needed.

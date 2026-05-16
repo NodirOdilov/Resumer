@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: resumer-backend
+  namespace: resumer
+  labels:
+    app.kubernetes.io/name: resumer-backend
+    app.kubernetes.io/component: backend
+    app.kubernetes.io/part-of: resumer-platform
+spec:
+  type: ClusterIP
+  ports:
+    - name: http
+      port: 8000
+      targetPort: http
+      protocol: TCP
+  selector:
+    app.kubernetes.io/name: resumer-backend
+    app.kubernetes.io/component: backend

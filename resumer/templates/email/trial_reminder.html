@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Your Trial Ends in {{ days_remaining }} Days</title>
+  <!--[if mso]>
+  <style type="text/css">
+    table { border-collapse: collapse; }
+    .fallback-font { font-family: Arial, sans-serif; }
+  </style>
+  <![endif]-->
+  <style type="text/css">
+    @media only screen and (max-width: 620px) {
+      .email-container { width: 100% !important; max-width: 100% !important; }
+      .email-body-inner { padding: 24px 20px !important; }
+      .cta-button { width: 100% !important; }
+      .cta-button a { display: block !important; width: 100% !important; }
+    }
+  </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F5F5F5; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #F5F5F5;">
+    <tr>
+      <td align="center" style="padding: 40px 16px;">
+        <!-- Email Container -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="email-container" style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+          <!-- Header -->
+          <tr>
+            <td align="center" style="padding: 32px 40px 24px 40px; border-bottom: 3px solid #0D47A1;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; color: #0D47A1; letter-spacing: -0.5px;">
+                    Resumer
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Urgency Banner -->
+          <tr>
+            <td align="center" style="background-color: #FFF8E1; padding: 16px 40px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td align="center" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 600; color: #E65100;">
+                    &#9888; Your trial ends in {{ days_remaining }} days
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Body -->
+          <tr>
+            <td class="email-body-inner" style="padding: 40px 40px 32px 40px;">
+              <!-- Greeting -->
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 600; color: #212121; padding-bottom: 16px;">
+                    Hi {{ user.first_name }},
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color: #424242; padding-bottom: 32px;">
+                    Your 14-day Resumer trial is ending on <strong>{{ trial_end_date }}</strong>. We hope you've been enjoying all the premium features!
+                  </td>
+                </tr>
+              </table>
+              <!-- Features You'll Lose -->
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 32px;">
+                <tr>
+                  <td style="background-color: #FFEBEE; border-radius: 8px; padding: 24px;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 600; color: #C62828; padding-bottom: 16px;">
+                          Features you'll lose without upgrading:
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 28px; color: #424242;">
+                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                              <td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 28px; color: #424242; padding-left: 4px;">
+                                &#10060;&nbsp;&nbsp;Access to all 34+ premium templates<br>
+                                &#10060;&nbsp;&nbsp;Unlimited resume and cover letter downloads<br>
+                                &#10060;&nbsp;&nbsp;PDF and DOCX export formats<br>
+                                &#10060;&nbsp;&nbsp;AI-powered content suggestions<br>
+                                &#10060;&nbsp;&nbsp;Priority customer support
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- CTA Button -->
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td align="center" style="padding-bottom: 32px;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="cta-button">
+                      <tr>
+                        <td align="center" style="background-color: #0D47A1; border-radius: 6px;">
+                          <a href="{{ dashboard_url }}" target="_blank" style="display: inline-block; padding: 16px 48px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 600; color: #FFFFFF; text-decoration: none; border-radius: 6px;">
+                            <!--[if mso]><i style="mso-font-width: 300%; mso-text-raise: 30px;">&nbsp;</i><![endif]-->
+                            <span style="mso-text-raise: 15px;">Continue Premium Access</span>
+                            <!--[if mso]><i style="mso-font-width: 300%;">&nbsp;</i><![endif]-->
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- Price Note -->
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td style="background-color: #E3F2FD; border-radius: 6px; padding: 20px;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 22px; color: #0D47A1;">
+                          &#128161; <strong>Plans start at just $9.99/month.</strong> Upgrade before your trial ends to keep all your resumes and continue accessing premium features without interruption.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Footer -->
+          <tr>
+            <td style="background-color: #FAFAFA; padding: 24px 40px; border-top: 1px solid #EEEEEE;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td align="center" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px; color: #9E9E9E; padding-bottom: 8px;">
+                    &copy; 2026 Resumer. All rights reserved.
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px;">
+                    <a href="{{ unsubscribe_url }}" style="color: #9E9E9E; text-decoration: underline;">Unsubscribe</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

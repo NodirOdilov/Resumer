@@ -1,0 +1,212 @@
+[
+  {
+    "id": "resume-sarah-swe",
+    "userId": "user-demo",
+    "title": "Senior Software Engineer Resume",
+    "type": "resume",
+    "templateId": "tpl-resume-1",
+    "templateSlug": "modern-professional",
+    "status": "complete",
+    "language": "en-us",
+    "settings": {
+      "color": "#0D47A1",
+      "font": "Inter",
+      "fontSize": 14,
+      "lineSpacing": 1.5,
+      "margins": { "top": 24, "right": 24, "bottom": 24, "left": 24 }
+    },
+    "createdAt": "2026-04-22T14:00:00Z",
+    "updatedAt": "2026-05-06T18:30:00Z",
+    "content": {
+      "contact": {
+        "firstName": "Sarah",
+        "lastName": "Mitchell",
+        "jobTitle": "Senior Software Engineer",
+        "email": "sarah.mitchell@example.com",
+        "phone": "+1 (415) 555-0142",
+        "city": "San Francisco",
+        "country": "USA",
+        "linkedin": "linkedin.com/in/sarahmitchell",
+        "website": "sarahmitchell.dev"
+      },
+      "summary": "Senior Software Engineer with 8+ years building distributed systems at scale. Led platform teams through three major architecture migrations, shipping reliable APIs that serve 50M+ daily requests. Passionate about mentoring engineers and translating ambiguous problems into clean, testable code.",
+      "experience": [
+        {
+          "id": "exp-1",
+          "jobTitle": "Senior Software Engineer",
+          "company": "Stripe",
+          "location": "San Francisco, CA",
+          "startDate": "2022-03",
+          "endDate": null,
+          "current": true,
+          "description": "Led migration of payments core from monolith to event-driven services, cutting median latency by 38%.\nDesigned authorization framework now used by 12 product teams; replaced 5 ad-hoc systems.\nMentored 4 mid-level engineers, two of whom were promoted to senior within a year.\nAuthored RFC adopted across the org for handling idempotent retries safely."
+        },
+        {
+          "id": "exp-2",
+          "jobTitle": "Software Engineer",
+          "company": "Airbnb",
+          "location": "San Francisco, CA",
+          "startDate": "2019-06",
+          "endDate": "2022-02",
+          "current": false,
+          "description": "Shipped the booking-flow rewrite that increased conversion by 6.2% (~$80M annualised).\nBuilt fraud-detection signals consumed by trust-and-safety, blocking ~3,200 fraudulent bookings/month.\nOwned the on-call rotation for the bookings service; reduced P1 alerts by 60% over 12 months."
+        },
+        {
+          "id": "exp-3",
+          "jobTitle": "Junior Software Engineer",
+          "company": "Square",
+          "location": "San Francisco, CA",
+          "startDate": "2017-08",
+          "endDate": "2019-05",
+          "current": false,
+          "description": "Built dispute-management dashboards used by 400+ internal operators daily.\nMigrated legacy Rails service to Go, halving p99 response time.\nWon the company-wide hackathon with a real-time merchant analytics prototype."
+        }
+      ],
+      "education": [
+        {
+          "id": "edu-1",
+          "degree": "B.S. Computer Science",
+          "school": "University of California, Berkeley",
+          "location": "Berkeley, CA",
+          "startDate": "2013-09",
+          "endDate": "2017-05",
+          "gpa": "3.8",
+          "description": "Honours: Phi Beta Kappa. Capstone: distributed key-value store in Go."
+        }
+      ],
+      "skills": [
+        { "id": "s1", "name": "Go", "level": "Expert" },
+        { "id": "s2", "name": "Python", "level": "Expert" },
+        { "id": "s3", "name": "TypeScript", "level": "Advanced" },
+        { "id": "s4", "name": "Distributed Systems", "level": "Expert" },
+        { "id": "s5", "name": "PostgreSQL", "level": "Advanced" },
+        { "id": "s6", "name": "Kafka", "level": "Advanced" },
+        { "id": "s7", "name": "AWS", "level": "Advanced" },
+        { "id": "s8", "name": "Kubernetes", "level": "Intermediate" },
+        { "id": "s9", "name": "System Design", "level": "Expert" },
+        { "id": "s10", "name": "Code Review", "level": "Expert" }
+      ],
+      "languages": [
+        { "id": "l1", "name": "English", "level": "Native" },
+        { "id": "l2", "name": "Spanish", "level": "Conversational" }
+      ],
+      "certifications": [
+        {
+          "id": "c1",
+          "name": "AWS Certified Solutions Architect — Professional",
+          "issuer": "Amazon Web Services",
+          "date": "2023-09"
+        }
+      ],
+      "projects": [
+        {
+          "id": "p1",
+          "name": "Open-source rate-limiter (kapok)",
+          "description": "Sliding-window rate-limiter library for Go, 1.2k stars on GitHub, used in production at three Fortune 500 companies.",
+          "link": "github.com/sarahmitchell/kapok"
+        }
+      ]
+    }
+  },
+  {
+    "id": "resume-sarah-pm",
+    "userId": "user-demo",
+    "title": "Engineering Manager Resume",
+    "type": "resume",
+    "templateId": "tpl-resume-3",
+    "templateSlug": "executive-classic",
+    "status": "complete",
+    "language": "en-us",
+    "settings": {
+      "color": "#1B5E20",
+      "font": "Inter",
+      "fontSize": 14,
+      "lineSpacing": 1.5,
+      "margins": { "top": 24, "right": 24, "bottom": 24, "left": 24 }
+    },
+    "createdAt": "2026-05-01T11:00:00Z",
+    "updatedAt": "2026-05-05T20:15:00Z",
+    "content": {
+      "contact": {
+        "firstName": "Sarah",
+        "lastName": "Mitchell",
+        "jobTitle": "Engineering Manager",
+        "email": "sarah.mitchell@example.com",
+        "phone": "+1 (415) 555-0142",
+        "city": "San Francisco",
+        "country": "USA",
+        "linkedin": "linkedin.com/in/sarahmitchell"
+      },
+      "summary": "Engineering leader who has scaled teams from 4 to 25 across two startups. Track record of shipping reliably while keeping attrition under 5%. I optimise for clarity, autonomy, and momentum.",
+      "experience": [
+        {
+          "id": "exp-1",
+          "jobTitle": "Engineering Manager, Payments Platform",
+          "company": "Stripe",
+          "location": "San Francisco, CA",
+          "startDate": "2023-08",
+          "endDate": null,
+          "current": true,
+          "description": "Manage a team of 9 engineers across two squads owning the global payments authorization layer.\nSet quarterly OKRs aligned to revenue and reliability targets; hit 94% of stretch goals over the last 4 quarters.\nDrove the on-call playbook rewrite that cut median time-to-recovery from 47 min to 12 min."
+        }
+      ],
+      "education": [
+        {
+          "id": "edu-1",
+          "degree": "B.S. Computer Science",
+          "school": "UC Berkeley",
+          "location": "Berkeley, CA",
+          "startDate": "2013-09",
+          "endDate": "2017-05"
+        }
+      ],
+      "skills": [
+        { "id": "s1", "name": "Team Leadership", "level": "Expert" },
+        { "id": "s2", "name": "Performance Management", "level": "Advanced" },
+        { "id": "s3", "name": "Hiring & Interviewing", "level": "Expert" },
+        { "id": "s4", "name": "Roadmapping", "level": "Advanced" },
+        { "id": "s5", "name": "Stakeholder Management", "level": "Advanced" }
+      ]
+    }
+  },
+  {
+    "id": "cl-sarah-stripe",
+    "userId": "user-demo",
+    "title": "Cover Letter — Stripe Senior SWE",
+    "type": "cover_letter",
+    "templateId": "tpl-cover_letter-1",
+    "templateSlug": "modern-professional",
+    "status": "complete",
+    "language": "en-us",
+    "settings": {
+      "color": "#0D47A1",
+      "font": "Inter",
+      "fontSize": 14,
+      "lineSpacing": 1.5,
+      "margins": { "top": 24, "right": 24, "bottom": 24, "left": 24 }
+    },
+    "createdAt": "2026-04-25T16:00:00Z",
+    "updatedAt": "2026-04-25T16:30:00Z",
+    "content": {
+      "contact": {
+        "firstName": "Sarah",
+        "lastName": "Mitchell",
+        "jobTitle": "Senior Software Engineer",
+        "email": "sarah.mitchell@example.com",
+        "phone": "+1 (415) 555-0142",
+        "city": "San Francisco",
+        "country": "USA"
+      },
+      "recipient": {
+        "name": "Hiring Manager",
+        "company": "Stripe",
+        "address": "510 Townsend St, San Francisco, CA"
+      },
+      "greeting": "Dear Hiring Manager,",
+      "opening": "I am writing to apply for the Senior Software Engineer role on the Payments Platform team. I have spent the past five years building high-throughput payment systems and would love to bring that experience to Stripe.",
+      "body": "At Airbnb I shipped the booking-flow rewrite that increased conversion by 6.2% — roughly $80M of additional annualised revenue. I am comfortable owning ambiguous problem spaces and turning them into well-tested, observable services. I gravitate toward systems where correctness matters: payments, fraud, identity. Stripe's bar for craftsmanship and its public commitment to durable infrastructure are exactly the environment where I do my best work.",
+      "closing": "Thank you for considering my application. I would welcome the chance to discuss how I can contribute to your platform team.",
+      "signature": "Sincerely,\nSarah Mitchell"
+    }
+  }
+]

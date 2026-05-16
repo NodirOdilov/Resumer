@@ -1,0 +1,240 @@
+# Resumer translations for Uzbek
+# Copyright (C) 2026 Resumer
+msgid ""
+msgstr ""
+"Project-Id-Version: Resumer 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-19 00:00+0000\n"
+"PO-Revision-Date: 2026-03-19 00:00+0000\n"
+"Last-Translator: Resumer Team\n"
+"Language-Team: Uzbek\n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Welcome to Resumer"
+msgstr "Resumerga xush kelibsiz"
+
+msgid "Professional Resume Builder"
+msgstr "Professional rezyume yaratuvchi"
+
+msgid "Create professional resumes, CVs, and cover letters"
+msgstr "Professional rezyumelar, CV va qo'shimcha xatlar yarating"
+
+msgid "Sign In"
+msgstr "Kirish"
+
+msgid "Sign Up"
+msgstr "Ro'yxatdan o'tish"
+
+msgid "Log Out"
+msgstr "Chiqish"
+
+msgid "Email Address"
+msgstr "Elektron pochta manzili"
+
+msgid "Password"
+msgstr "Parol"
+
+msgid "First Name"
+msgstr "Ism"
+
+msgid "Last Name"
+msgstr "Familiya"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "This field is required."
+msgstr "Bu maydon to'ldirilishi shart."
+
+msgid "Please enter a valid email address."
+msgstr "Iltimos, to'g'ri elektron pochta manzilini kiriting."
+
+msgid "Password must be at least 8 characters."
+msgstr "Parol kamida 8 ta belgidan iborat bo'lishi kerak."
+
+msgid "Passwords do not match."
+msgstr "Parollar mos kelmaydi."
+
+msgid "Account created successfully."
+msgstr "Hisob muvaffaqiyatli yaratildi."
+
+msgid "Email verification sent."
+msgstr "Tasdiqlash xati yuborildi."
+
+msgid "Password reset email sent."
+msgstr "Parolni tiklash xati yuborildi."
+
+msgid "Password changed successfully."
+msgstr "Parol muvaffaqiyatli o'zgartirildi."
+
+msgid "Resume"
+msgstr "Rezyume"
+
+msgid "CV"
+msgstr "CV"
+
+msgid "Cover Letter"
+msgstr "Qo'shimcha xat"
+
+msgid "Templates"
+msgstr "Shablonlar"
+
+msgid "Examples"
+msgstr "Namunalar"
+
+msgid "Dashboard"
+msgstr "Boshqaruv paneli"
+
+msgid "My Documents"
+msgstr "Mening hujjatlarim"
+
+msgid "Settings"
+msgstr "Sozlamalar"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Download"
+msgstr "Yuklab olish"
+
+msgid "Save"
+msgstr "Saqlash"
+
+msgid "Delete"
+msgstr "O'chirish"
+
+msgid "Edit"
+msgstr "Tahrirlash"
+
+msgid "Duplicate"
+msgstr "Nusxalash"
+
+msgid "Preview"
+msgstr "Oldindan ko'rish"
+
+msgid "Draft"
+msgstr "Qoralama"
+
+msgid "Complete"
+msgstr "Tugallangan"
+
+msgid "Downloaded"
+msgstr "Yuklab olingan"
+
+msgid "Contact Information"
+msgstr "Aloqa ma'lumotlari"
+
+msgid "Professional Summary"
+msgstr "Kasbiy xulosa"
+
+msgid "Work Experience"
+msgstr "Ish tajribasi"
+
+msgid "Education"
+msgstr "Ta'lim"
+
+msgid "Skills"
+msgstr "Ko'nikmalar"
+
+msgid "Languages"
+msgstr "Tillar"
+
+msgid "Certificates"
+msgstr "Sertifikatlar"
+
+msgid "Projects"
+msgstr "Loyihalar"
+
+msgid "Awards"
+msgstr "Mukofotlar"
+
+msgid "Volunteer Experience"
+msgstr "Ko'ngillilik tajribasi"
+
+msgid "Hobbies & Interests"
+msgstr "Sevimli mashg'ulotlar va qiziqishlar"
+
+msgid "Custom Section"
+msgstr "Maxsus bo'lim"
+
+msgid "PDF Document"
+msgstr "PDF hujjat"
+
+msgid "Word Document"
+msgstr "Word hujjat"
+
+msgid "Plain Text"
+msgstr "Oddiy matn"
+
+msgid "Document generated successfully."
+msgstr "Hujjat muvaffaqiyatli yaratildi."
+
+msgid "Document not found."
+msgstr "Hujjat topilmadi."
+
+msgid "Permission denied."
+msgstr "Ruxsat berilmadi."
+
+msgid "Subscription"
+msgstr "Obuna"
+
+msgid "Payment"
+msgstr "To'lov"
+
+msgid "Invoice"
+msgstr "Hisob-faktura"
+
+msgid "Trial"
+msgstr "Sinov davri"
+
+msgid "Active"
+msgstr "Faol"
+
+msgid "Canceled"
+msgstr "Bekor qilingan"
+
+msgid "Expired"
+msgstr "Muddati tugagan"
+
+msgid "Your trial expires in %(days)d days."
+msgstr "Sinov davringiz %(days)d kun ichida tugaydi."
+
+msgid "Subscription confirmed."
+msgstr "Obuna tasdiqlandi."
+
+msgid "Payment successful."
+msgstr "To'lov muvaffaqiyatli amalga oshirildi."
+
+msgid "Search"
+msgstr "Qidirish"
+
+msgid "No results found."
+msgstr "Natijalar topilmadi."
+
+msgid "Page not found."
+msgstr "Sahifa topilmadi."
+
+msgid "Server error."
+msgstr "Server xatosi."
+
+msgid "Privacy Policy"
+msgstr "Maxfiylik siyosati"
+
+msgid "Terms of Service"
+msgstr "Foydalanish shartlari"
+
+msgid "Cookie Policy"
+msgstr "Cookie siyosati"
+
+msgid "About Us"
+msgstr "Biz haqimizda"
+
+msgid "Contact Us"
+msgstr "Biz bilan bog'laning"
+
+msgid "All rights reserved."
+msgstr "Barcha huquqlar himoyalangan."

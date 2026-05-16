@@ -1,0 +1,236 @@
+[
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000001",
+    "fields": {
+      "name": "Accounting & Finance",
+      "slug": "accounting-finance",
+      "description": "Resume examples for accounting, finance, banking, and bookkeeping professionals.",
+      "icon": "mdi-calculator",
+      "order": 1,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000002",
+    "fields": {
+      "name": "Creative Fields Design & Arts",
+      "slug": "creative-fields-design-arts",
+      "description": "Resume examples for graphic designers, artists, photographers, and other creative professionals.",
+      "icon": "mdi-palette",
+      "order": 2,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000003",
+    "fields": {
+      "name": "Education",
+      "slug": "education",
+      "description": "Resume examples for teachers, professors, tutors, and education administrators.",
+      "icon": "mdi-school",
+      "order": 3,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000004",
+    "fields": {
+      "name": "Engineering Tech & Science",
+      "slug": "engineering-tech-science",
+      "description": "Resume examples for engineers, scientists, and technical researchers.",
+      "icon": "mdi-cog",
+      "order": 4,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000005",
+    "fields": {
+      "name": "Food Service",
+      "slug": "food-service",
+      "description": "Resume examples for chefs, servers, bartenders, and restaurant managers.",
+      "icon": "mdi-silverware-fork-knife",
+      "order": 5,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000006",
+    "fields": {
+      "name": "Healthcare & Wellbeing",
+      "slug": "healthcare-wellbeing",
+      "description": "Resume examples for nurses, doctors, therapists, and healthcare administrators.",
+      "icon": "mdi-hospital-box",
+      "order": 6,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000007",
+    "fields": {
+      "name": "Information Technology",
+      "slug": "information-technology",
+      "description": "Resume examples for software developers, system administrators, data analysts, and IT professionals.",
+      "icon": "mdi-laptop",
+      "order": 7,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000008",
+    "fields": {
+      "name": "Law Enforcement & Security",
+      "slug": "law-enforcement-security",
+      "description": "Resume examples for police officers, security guards, detectives, and corrections officers.",
+      "icon": "mdi-shield-account",
+      "order": 8,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000009",
+    "fields": {
+      "name": "Legal Services",
+      "slug": "legal-services",
+      "description": "Resume examples for lawyers, paralegals, legal assistants, and compliance officers.",
+      "icon": "mdi-gavel",
+      "order": 9,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000010",
+    "fields": {
+      "name": "Maintenance & Repair",
+      "slug": "maintenance-repair",
+      "description": "Resume examples for maintenance technicians, mechanics, and repair specialists.",
+      "icon": "mdi-wrench",
+      "order": 10,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000011",
+    "fields": {
+      "name": "Management",
+      "slug": "management",
+      "description": "Resume examples for project managers, operations managers, and executive leaders.",
+      "icon": "mdi-account-tie",
+      "order": 11,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000012",
+    "fields": {
+      "name": "Marketing Media & PR",
+      "slug": "marketing-media-pr",
+      "description": "Resume examples for marketers, public relations specialists, journalists, and media professionals.",
+      "icon": "mdi-bullhorn",
+      "order": 12,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000013",
+    "fields": {
+      "name": "Office & Administrative",
+      "slug": "office-administrative",
+      "description": "Resume examples for administrative assistants, receptionists, and office managers.",
+      "icon": "mdi-desk",
+      "order": 13,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000014",
+    "fields": {
+      "name": "Real Estate",
+      "slug": "real-estate",
+      "description": "Resume examples for real estate agents, brokers, property managers, and appraisers.",
+      "icon": "mdi-home-city",
+      "order": 14,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000015",
+    "fields": {
+      "name": "Sales and Customer Service",
+      "slug": "sales-and-customer-service",
+      "description": "Resume examples for sales representatives, account managers, and customer service agents.",
+      "icon": "mdi-handshake",
+      "order": 15,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000016",
+    "fields": {
+      "name": "Students",
+      "slug": "students",
+      "description": "Resume examples for high school students, college students, and recent graduates.",
+      "icon": "mdi-account-school",
+      "order": 16,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000017",
+    "fields": {
+      "name": "Travel & Hospitality",
+      "slug": "travel-hospitality",
+      "description": "Resume examples for hotel staff, travel agents, tour guides, and hospitality managers.",
+      "icon": "mdi-airplane",
+      "order": 17,
+      "parent": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "examples.examplecategory",
+    "pk": "a1000000-0000-0000-0000-000000000018",
+    "fields": {
+      "name": "Other",
+      "slug": "other",
+      "description": "Resume examples for roles that do not fit into a specific industry category.",
+      "icon": "mdi-dots-horizontal-circle",
+      "order": 18,
+      "parent": null,
+      "is_active": true
+    }
+  }
+]

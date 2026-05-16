@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cover Letter - {{ contact.first_name }} {{ contact.last_name }}</title>
+<style>
+    @page {
+        size: A4;
+        margin: {{ settings.margins|default:"16mm 22mm" }};
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: {{ settings.font_family|default:"'Arial', 'Helvetica', sans-serif" }};
+        font-size: {{ settings.font_size|default:"10.5pt" }};
+        line-height: {{ settings.line_spacing|default:"1.6" }};
+        color: {{ settings.text_color|default:"#333" }};
+    }
+    header {
+        text-align: center;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+    header h1 {
+        font-size: 1.6em;
+        color: {{ settings.primary_color|default:"#333" }};
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    .contact-line {
+        font-size: 0.83em;
+        color: #888;
+        margin-top: 6px;
+    }
+    .contact-line a { color: {{ settings.primary_color|default:"#333" }}; text-decoration: none; }
+    .date { font-size: 0.9em; color: #777; margin-bottom: 16px; }
+    .recipient { margin-bottom: 16px; font-size: 0.93em; }
+    .recipient p { margin-bottom: 2px; }
+    .greeting {
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 14px;
+        color: {{ settings.primary_color|default:"#333" }};
+    }
+    .body-text { margin-bottom: 12px; font-size: 0.95em; text-align: justify; }
+    .closing { margin-top: 22px; font-size: 0.95em; }
+    .signature {
+        margin-top: 28px;
+        padding-top: 12px;
+        border-top: 1px solid #ddd;
+    }
+    .signature .name {
+        font-size: 1.1em;
+        font-weight: 700;
+        color: {{ settings.primary_color|default:"#333" }};
+    }
+    .signature .detail { font-size: 0.85em; color: #777; }
+</style>
+</head>
+<body>
+<header>
+    <h1>{{ contact.first_name }} {{ contact.last_name }}</h1>
+    <div class="contact-line">
+        {% if contact.email %}{{ contact.email }}{% endif %}
+        {% if contact.phone %} &bull; {{ contact.phone }}{% endif %}
+        {% if contact.city %} &bull; {{ contact.city }}{% if contact.state %}, {{ contact.state }}{% endif %}{% endif %}
+        {% if contact.linkedin_url %} &bull; <a href="{{ contact.linkedin_url }}">LinkedIn</a>{% endif %}
+        {% if contact.website_url %} &bull; <a href="{{ contact.website_url }}">{{ contact.website_url }}</a>{% endif %}
+    </div>
+</header>
+
+<div class="date">{{ date }}</div>
+
+<div class="recipient">
+    {% if recipient_name %}<p><strong>{{ recipient_name }}</strong></p>{% endif %}
+    {% if recipient_title %}<p>{{ recipient_title }}</p>{% endif %}
+    {% if company_name %}<p>{{ company_name }}</p>{% endif %}
+    {% if company_address %}<p>{{ company_address }}</p>{% endif %}
+</div>
+
+<p class="greeting">Dear {{ recipient_name|default:"Hiring Manager" }},</p>
+
+{% if opening_paragraph %}
+<p class="body-text">{{ opening_paragraph }}</p>
+{% endif %}
+
+{% if body_paragraph_1 %}
+<p class="body-text">{{ body_paragraph_1 }}</p>
+{% endif %}
+
+{% if body_paragraph_2 %}
+<p class="body-text">{{ body_paragraph_2 }}</p>
+{% endif %}
+
+{% if body_paragraph_3 %}
+<p class="body-text">{{ body_paragraph_3 }}</p>
+{% endif %}
+
+{% if closing_paragraph %}
+<p class="body-text">{{ closing_paragraph }}</p>
+{% endif %}
+
+<div class="closing">
+    <p>{{ closing_salutation|default:"Sincerely" }},</p>
+</div>
+
+<div class="signature">
+    <p class="name">{{ contact.first_name }} {{ contact.last_name }}</p>
+    {% if contact.phone %}<p class="detail">{{ contact.phone }}</p>{% endif %}
+    {% if contact.email %}<p class="detail">{{ contact.email }}</p>{% endif %}
+</div>
+</body>
+</html>

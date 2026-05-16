@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "title": "Build a Resume That Gets You Hired",
+    "subtitle": "Create a professional, ATS-friendly resume in minutes. Choose from expert-designed templates and land your dream job faster.",
+    "cta_primary": "Create My Resume",
+    "cta_secondary": "See Templates",
+    "social_proof": "Trusted by over 1,000,000 job seekers worldwide"
+  },
+  "steps": {
+    "title": "Create Your Resume in 3 Easy Steps",
+    "subtitle": "Our intuitive builder guides you through the entire process",
+    "step_1_title": "Choose a Template",
+    "step_1_description": "Browse our collection of professionally designed, ATS-optimized templates. Pick the one that best matches your style and industry.",
+    "step_2_title": "Fill In Your Details",
+    "step_2_description": "Add your work experience, education, skills, and more. Our smart suggestions and expert tips help you write compelling content.",
+    "step_3_title": "Download & Apply",
+    "step_3_description": "Download your polished resume as a PDF, Word document, or share it with a link. Start applying to jobs with confidence."
+  },
+  "features": {
+    "title": "Everything You Need to Stand Out",
+    "subtitle": "Powerful features designed to help you create the perfect resume",
+    "ats_friendly_title": "ATS-Friendly",
+    "ats_friendly_description": "All templates are optimized to pass Applicant Tracking Systems so your resume reaches human recruiters.",
+    "expert_tips_title": "Expert Tips",
+    "expert_tips_description": "Get real-time suggestions and writing tips from career experts as you build your resume.",
+    "multiple_formats_title": "Multiple Formats",
+    "multiple_formats_description": "Download your resume as PDF, Word, or PNG. Share it via a direct link or print it.",
+    "customizable_title": "Fully Customizable",
+    "customizable_description": "Adjust colors, fonts, spacing, and layout to make your resume uniquely yours.",
+    "multilingual_title": "Multilingual",
+    "multilingual_description": "Create resumes in multiple languages with built-in translation support for global job applications.",
+    "version_history_title": "Version History",
+    "version_history_description": "Save multiple versions of your resume and tailor each one for different job applications.",
+    "real_time_preview_title": "Real-Time Preview",
+    "real_time_preview_description": "See changes instantly as you type with our live document preview.",
+    "cover_letter_title": "Cover Letters",
+    "cover_letter_description": "Create matching cover letters that complement your resume and strengthen your application."
+  },
+  "cta": {
+    "title": "Ready to Build Your Resume?",
+    "subtitle": "Join millions of job seekers who have landed their dream jobs with Resumer.",
+    "button": "Create My Resume Now",
+    "no_credit_card": "No credit card required. Start building for free."
+  },
+  "trustpilot": {
+    "rating_text": "Rated Excellent on Trustpilot",
+    "review_count": "Based on {{count}} reviews",
+    "badge_alt": "Trustpilot rating badge"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about our resume builder",
+    "q1": "Is Resumer really free to use?",
+    "a1": "Yes, you can create and edit your resume for free. We offer a free plan with access to basic templates and features. Premium templates and advanced features are available with our paid plans.",
+    "q2": "What makes a resume ATS-friendly?",
+    "a2": "An ATS-friendly resume uses standard formatting, clear section headings, and common fonts that Applicant Tracking Systems can easily parse. All our templates are designed with ATS compatibility in mind.",
+    "q3": "Can I download my resume as a PDF?",
+    "a3": "Absolutely! You can download your resume in PDF, Word (DOCX), or PNG format. PDF is recommended for most job applications as it preserves your formatting across all devices.",
+    "q4": "How do I choose the right template?",
+    "a4": "Consider your industry and career level. Professional templates work well for corporate roles, modern templates suit tech and startups, and creative templates are great for design and marketing positions.",
+    "q5": "Can I create multiple resumes?",
+    "a5": "Yes! You can create as many resumes as you need. We recommend tailoring your resume for each job application to increase your chances of landing an interview.",
+    "q6": "Is my data safe and private?",
+    "a6": "Absolutely. We use industry-standard encryption to protect your data. Your personal information is never shared with third parties. You can delete your account and all associated data at any time.",
+    "q7": "Can I create a resume in another language?",
+    "a7": "Yes, Resumer supports multiple languages. You can create resumes in English, German, French, Spanish, Italian, Portuguese, and many more languages.",
+    "q8": "Do I need to create an account?",
+    "a8": "You can start building your resume without an account. However, creating a free account lets you save your progress, access your resumes from any device, and manage multiple documents.",
+    "q9": "Can I also create a cover letter?",
+    "a9": "Yes! Our platform includes a cover letter builder with matching templates. A well-crafted cover letter paired with your resume significantly increases your chances of getting an interview.",
+    "q10": "How do I cancel my subscription?",
+    "a10": "You can cancel your subscription at any time from your account settings. There are no cancellation fees, and you will continue to have access to premium features until the end of your billing period.",
+    "q11": "What if I need help with my resume content?",
+    "a11": "Our builder includes expert tips and suggestions for every section. We also provide pre-written examples and phrases tailored to various industries and roles to help you write compelling content."
+  }
+}

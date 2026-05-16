@@ -1,0 +1,251 @@
+services:
+  # -------------------------------------------------------------------------
+  # Django Backend
+  # -------------------------------------------------------------------------
+  web:
+    build:
+      context: ./resumer
+      dockerfile: Dockerfile
+    container_name: resumer-web
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./resumer:/app
+      - static_files:/app/staticfiles
+      - media_files:/app/media
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    command: >
+      gunicorn config.wsgi:application
+      --bind 0.0.0.0:8000
+      --workers ${GUNICORN_WORKERS:-4}
+      --worker-class gthread
+      --threads ${GUNICORN_THREADS:-2}
+      --timeout ${GUNICORN_TIMEOUT:-120}
+      --reload
+      --access-logfile -
+      --error-logfile -
+
+  # -------------------------------------------------------------------------
+  # Next.js Frontend
+  # -------------------------------------------------------------------------
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: resumer-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-http://localhost/api}
+      - NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL:-http://localhost}
+      - NODE_ENV=development
+
+  # -------------------------------------------------------------------------
+  # PostgreSQL
+  # -------------------------------------------------------------------------
+  db:
+    image: postgres:18-alpine
+    container_name: resumer-db
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-resumer}
+      POSTGRES_USER: ${POSTGRES_USER:-resumer}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-resumer_secret}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-resumer} -d ${POSTGRES_DB:-resumer}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # -------------------------------------------------------------------------
+  # Redis
+  # -------------------------------------------------------------------------
+  redis:
+    image: redis:8-alpine
+    container_name: resumer-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+
+  # -------------------------------------------------------------------------
+  # Celery Worker
+  # -------------------------------------------------------------------------
+  celery:
+    build:
+      context: ./resumer
+      dockerfile: Dockerfile
+    container_name: resumer-celery
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./resumer:/app
+      - media_files:/app/media
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    command: >
+      celery -A config worker
+      -l info
+      -Q high,default,low
+      --concurrency=${CELERY_WORKER_CONCURRENCY:-4}
+
+  # -------------------------------------------------------------------------
+  # Celery Beat (Periodic Tasks)
+  # -------------------------------------------------------------------------
+  celery-beat:
+    build:
+      context: ./resumer
+      dockerfile: Dockerfile
+    container_name: resumer-celery-beat
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./resumer:/app
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    command: >
+      celery -A config beat
+      -l info
+      --scheduler django_celery_beat.schedulers:DatabaseScheduler
+
+  # -------------------------------------------------------------------------
+  # Elasticsearch
+  # -------------------------------------------------------------------------
+  elasticsearch:
+    image: elasticsearch:8.16.0
+    container_name: resumer-elasticsearch
+    restart: unless-stopped
+    ports:
+      - "9200:9200"
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - xpack.security.http.ssl.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:9200/_cluster/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  # -------------------------------------------------------------------------
+  # Nginx Reverse Proxy
+  # -------------------------------------------------------------------------
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    container_name: resumer-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - static_files:/app/static:ro
+      - media_files:/app/media:ro
+    depends_on:
+      - web
+      - frontend
+
+  # -------------------------------------------------------------------------
+  # PgBouncer (Connection Pooling)
+  # -------------------------------------------------------------------------
+  pgbouncer:
+    image: edoburu/pgbouncer:latest
+    container_name: resumer-pgbouncer
+    restart: unless-stopped
+    ports:
+      - "6432:6432"
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-resumer}:${POSTGRES_PASSWORD:-resumer_secret}@db:5432/${POSTGRES_DB:-resumer}
+      MAX_CLIENT_CONN: 100
+      DEFAULT_POOL_SIZE: 20
+      POOL_MODE: transaction
+    depends_on:
+      db:
+        condition: service_healthy
+
+  # -------------------------------------------------------------------------
+  # Telegram Bot
+  # -------------------------------------------------------------------------
+  telegram-bot:
+    build:
+      context: ./telegram-bot
+      dockerfile: Dockerfile
+    container_name: resumer-telegram-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN:-}
+      - API_BASE_URL=http://web:8000/api/v1
+      - REDIS_URL=redis://redis:6379/4
+      - BOT_MODE=polling
+    depends_on:
+      redis:
+        condition: service_healthy
+      web:
+        condition: service_started
+
+  # -------------------------------------------------------------------------
+  # MailHog (Development Email)
+  # -------------------------------------------------------------------------
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: resumer-mailhog
+    restart: unless-stopped
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+
+# ---------------------------------------------------------------------------
+# Named Volumes
+# ---------------------------------------------------------------------------
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+  elasticsearch_data:
+    driver: local
+  static_files:
+    driver: local
+  media_files:
+    driver: local

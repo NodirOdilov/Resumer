@@ -1,0 +1,240 @@
+# Resumer translations for French
+# Copyright (C) 2026 Resumer
+msgid ""
+msgstr ""
+"Project-Id-Version: Resumer 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-19 00:00+0000\n"
+"PO-Revision-Date: 2026-03-19 00:00+0000\n"
+"Last-Translator: Resumer Team\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Welcome to Resumer"
+msgstr "Bienvenue sur Resumer"
+
+msgid "Professional Resume Builder"
+msgstr "Cr\u00e9ateur de CV professionnel"
+
+msgid "Create professional resumes, CVs, and cover letters"
+msgstr "Cr\u00e9ez des CV, des curriculum vitae et des lettres de motivation professionnels"
+
+msgid "Sign In"
+msgstr "Se connecter"
+
+msgid "Sign Up"
+msgstr "S'inscrire"
+
+msgid "Log Out"
+msgstr "Se d\u00e9connecter"
+
+msgid "Email Address"
+msgstr "Adresse e-mail"
+
+msgid "Password"
+msgstr "Mot de passe"
+
+msgid "First Name"
+msgstr "Pr\u00e9nom"
+
+msgid "Last Name"
+msgstr "Nom de famille"
+
+msgid "Phone"
+msgstr "T\u00e9l\u00e9phone"
+
+msgid "This field is required."
+msgstr "Ce champ est obligatoire."
+
+msgid "Please enter a valid email address."
+msgstr "Veuillez saisir une adresse e-mail valide."
+
+msgid "Password must be at least 8 characters."
+msgstr "Le mot de passe doit contenir au moins 8 caract\u00e8res."
+
+msgid "Passwords do not match."
+msgstr "Les mots de passe ne correspondent pas."
+
+msgid "Account created successfully."
+msgstr "Compte cr\u00e9\u00e9 avec succ\u00e8s."
+
+msgid "Email verification sent."
+msgstr "E-mail de v\u00e9rification envoy\u00e9."
+
+msgid "Password reset email sent."
+msgstr "E-mail de r\u00e9initialisation du mot de passe envoy\u00e9."
+
+msgid "Password changed successfully."
+msgstr "Mot de passe modifi\u00e9 avec succ\u00e8s."
+
+msgid "Resume"
+msgstr "CV"
+
+msgid "CV"
+msgstr "Curriculum vitae"
+
+msgid "Cover Letter"
+msgstr "Lettre de motivation"
+
+msgid "Templates"
+msgstr "Mod\u00e8les"
+
+msgid "Examples"
+msgstr "Exemples"
+
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+msgid "My Documents"
+msgstr "Mes documents"
+
+msgid "Settings"
+msgstr "Param\u00e8tres"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Download"
+msgstr "T\u00e9l\u00e9charger"
+
+msgid "Save"
+msgstr "Enregistrer"
+
+msgid "Delete"
+msgstr "Supprimer"
+
+msgid "Edit"
+msgstr "Modifier"
+
+msgid "Duplicate"
+msgstr "Dupliquer"
+
+msgid "Preview"
+msgstr "Aper\u00e7u"
+
+msgid "Draft"
+msgstr "Brouillon"
+
+msgid "Complete"
+msgstr "Termin\u00e9"
+
+msgid "Downloaded"
+msgstr "T\u00e9l\u00e9charg\u00e9"
+
+msgid "Contact Information"
+msgstr "Coordonn\u00e9es"
+
+msgid "Professional Summary"
+msgstr "R\u00e9sum\u00e9 professionnel"
+
+msgid "Work Experience"
+msgstr "Exp\u00e9rience professionnelle"
+
+msgid "Education"
+msgstr "Formation"
+
+msgid "Skills"
+msgstr "Comp\u00e9tences"
+
+msgid "Languages"
+msgstr "Langues"
+
+msgid "Certificates"
+msgstr "Certificats"
+
+msgid "Projects"
+msgstr "Projets"
+
+msgid "Awards"
+msgstr "Distinctions"
+
+msgid "Volunteer Experience"
+msgstr "B\u00e9n\u00e9volat"
+
+msgid "Hobbies & Interests"
+msgstr "Loisirs et centres d'int\u00e9r\u00eat"
+
+msgid "Custom Section"
+msgstr "Section personnalis\u00e9e"
+
+msgid "PDF Document"
+msgstr "Document PDF"
+
+msgid "Word Document"
+msgstr "Document Word"
+
+msgid "Plain Text"
+msgstr "Texte brut"
+
+msgid "Document generated successfully."
+msgstr "Document g\u00e9n\u00e9r\u00e9 avec succ\u00e8s."
+
+msgid "Document not found."
+msgstr "Document introuvable."
+
+msgid "Permission denied."
+msgstr "Acc\u00e8s refus\u00e9."
+
+msgid "Subscription"
+msgstr "Abonnement"
+
+msgid "Payment"
+msgstr "Paiement"
+
+msgid "Invoice"
+msgstr "Facture"
+
+msgid "Trial"
+msgstr "Essai"
+
+msgid "Active"
+msgstr "Actif"
+
+msgid "Canceled"
+msgstr "Annul\u00e9"
+
+msgid "Expired"
+msgstr "Expir\u00e9"
+
+msgid "Your trial expires in %(days)d days."
+msgstr "Votre essai expire dans %(days)d jours."
+
+msgid "Subscription confirmed."
+msgstr "Abonnement confirm\u00e9."
+
+msgid "Payment successful."
+msgstr "Paiement r\u00e9ussi."
+
+msgid "Search"
+msgstr "Rechercher"
+
+msgid "No results found."
+msgstr "Aucun r\u00e9sultat trouv\u00e9."
+
+msgid "Page not found."
+msgstr "Page introuvable."
+
+msgid "Server error."
+msgstr "Erreur du serveur."
+
+msgid "Privacy Policy"
+msgstr "Politique de confidentialit\u00e9"
+
+msgid "Terms of Service"
+msgstr "Conditions d'utilisation"
+
+msgid "Cookie Policy"
+msgstr "Politique relative aux cookies"
+
+msgid "About Us"
+msgstr "\u00c0 propos de nous"
+
+msgid "Contact Us"
+msgstr "Nous contacter"
+
+msgid "All rights reserved."
+msgstr "Tous droits r\u00e9serv\u00e9s."

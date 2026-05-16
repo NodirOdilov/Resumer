@@ -1,0 +1,240 @@
+# Resumer translations for British English
+# Copyright (C) 2026 Resumer
+msgid ""
+msgstr ""
+"Project-Id-Version: Resumer 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-19 00:00+0000\n"
+"PO-Revision-Date: 2026-03-19 00:00+0000\n"
+"Last-Translator: Resumer Team\n"
+"Language-Team: British English\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Welcome to Resumer"
+msgstr "Welcome to Resumer"
+
+msgid "Professional Resume Builder"
+msgstr "Professional CV Builder"
+
+msgid "Create professional resumes, CVs, and cover letters"
+msgstr "Create professional CVs, resumes, and covering letters"
+
+msgid "Sign In"
+msgstr "Sign In"
+
+msgid "Sign Up"
+msgstr "Sign Up"
+
+msgid "Log Out"
+msgstr "Log Out"
+
+msgid "Email Address"
+msgstr "Email Address"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "First Name"
+msgstr "First Name"
+
+msgid "Last Name"
+msgstr "Surname"
+
+msgid "Phone"
+msgstr "Telephone"
+
+msgid "This field is required."
+msgstr "This field is required."
+
+msgid "Please enter a valid email address."
+msgstr "Please enter a valid email address."
+
+msgid "Password must be at least 8 characters."
+msgstr "Password must be at least 8 characters."
+
+msgid "Passwords do not match."
+msgstr "Passwords do not match."
+
+msgid "Account created successfully."
+msgstr "Account created successfully."
+
+msgid "Email verification sent."
+msgstr "Email verification sent."
+
+msgid "Password reset email sent."
+msgstr "Password reset email sent."
+
+msgid "Password changed successfully."
+msgstr "Password changed successfully."
+
+msgid "Resume"
+msgstr "CV"
+
+msgid "CV"
+msgstr "CV"
+
+msgid "Cover Letter"
+msgstr "Covering Letter"
+
+msgid "Templates"
+msgstr "Templates"
+
+msgid "Examples"
+msgstr "Examples"
+
+msgid "Dashboard"
+msgstr "Dashboard"
+
+msgid "My Documents"
+msgstr "My Documents"
+
+msgid "Settings"
+msgstr "Settings"
+
+msgid "Profile"
+msgstr "Profile"
+
+msgid "Download"
+msgstr "Download"
+
+msgid "Save"
+msgstr "Save"
+
+msgid "Delete"
+msgstr "Delete"
+
+msgid "Edit"
+msgstr "Edit"
+
+msgid "Duplicate"
+msgstr "Duplicate"
+
+msgid "Preview"
+msgstr "Preview"
+
+msgid "Draft"
+msgstr "Draft"
+
+msgid "Complete"
+msgstr "Complete"
+
+msgid "Downloaded"
+msgstr "Downloaded"
+
+msgid "Contact Information"
+msgstr "Contact Details"
+
+msgid "Professional Summary"
+msgstr "Professional Summary"
+
+msgid "Work Experience"
+msgstr "Work Experience"
+
+msgid "Education"
+msgstr "Education"
+
+msgid "Skills"
+msgstr "Skills"
+
+msgid "Languages"
+msgstr "Languages"
+
+msgid "Certificates"
+msgstr "Certificates"
+
+msgid "Projects"
+msgstr "Projects"
+
+msgid "Awards"
+msgstr "Awards"
+
+msgid "Volunteer Experience"
+msgstr "Voluntary Experience"
+
+msgid "Hobbies & Interests"
+msgstr "Hobbies & Interests"
+
+msgid "Custom Section"
+msgstr "Custom Section"
+
+msgid "PDF Document"
+msgstr "PDF Document"
+
+msgid "Word Document"
+msgstr "Word Document"
+
+msgid "Plain Text"
+msgstr "Plain Text"
+
+msgid "Document generated successfully."
+msgstr "Document generated successfully."
+
+msgid "Document not found."
+msgstr "Document not found."
+
+msgid "Permission denied."
+msgstr "Permission denied."
+
+msgid "Subscription"
+msgstr "Subscription"
+
+msgid "Payment"
+msgstr "Payment"
+
+msgid "Invoice"
+msgstr "Invoice"
+
+msgid "Trial"
+msgstr "Trial"
+
+msgid "Active"
+msgstr "Active"
+
+msgid "Canceled"
+msgstr "Cancelled"
+
+msgid "Expired"
+msgstr "Expired"
+
+msgid "Your trial expires in %(days)d days."
+msgstr "Your trial expires in %(days)d days."
+
+msgid "Subscription confirmed."
+msgstr "Subscription confirmed."
+
+msgid "Payment successful."
+msgstr "Payment successful."
+
+msgid "Search"
+msgstr "Search"
+
+msgid "No results found."
+msgstr "No results found."
+
+msgid "Page not found."
+msgstr "Page not found."
+
+msgid "Server error."
+msgstr "Server error."
+
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+msgid "Terms of Service"
+msgstr "Terms of Service"
+
+msgid "Cookie Policy"
+msgstr "Cookie Policy"
+
+msgid "About Us"
+msgstr "About Us"
+
+msgid "Contact Us"
+msgstr "Contact Us"
+
+msgid "All rights reserved."
+msgstr "All rights reserved."

@@ -1,0 +1,220 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{ contact.first_name }} {{ contact.last_name }} - Resume</title>
+<style>
+    @page {
+        size: A4;
+        margin: {{ settings.margins|default:"10mm 14mm" }};
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: {{ settings.font_family|default:"'Poppins', 'Segoe UI', sans-serif" }};
+        font-size: {{ settings.font_size|default:"10pt" }};
+        line-height: {{ settings.line_spacing|default:"1.45" }};
+        color: {{ settings.text_color|default:"#333" }};
+    }
+    .header {
+        text-align: center;
+        padding: 18px 0;
+        margin-bottom: 12px;
+        position: relative;
+    }
+    .header::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background: {{ settings.secondary_color|default:"#FF6B6B" }};
+        margin: 10px auto 0;
+        border-radius: 2px;
+    }
+    .header h1 {
+        font-size: 2.2em;
+        font-weight: 800;
+        color: {{ settings.primary_color|default:"#2D3436" }};
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .header .contact-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 8px;
+        font-size: 0.83em;
+        color: #888;
+    }
+    .header .contact-row a { color: {{ settings.secondary_color|default:"#FF6B6B" }}; text-decoration: none; }
+    h2 {
+        font-size: 0.85em;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #fff;
+        background: {{ settings.primary_color|default:"#2D3436" }};
+        padding: 5px 14px;
+        margin-top: 14px;
+        margin-bottom: 10px;
+        display: inline-block;
+        border-radius: 2px;
+    }
+    .section { margin-bottom: 4px; }
+    .summary { font-size: 0.93em; color: #555; margin-bottom: 4px; }
+    .entry { margin-bottom: 10px; page-break-inside: avoid; }
+    .entry-row { display: flex; justify-content: space-between; align-items: baseline; }
+    .entry-title { font-weight: 700; }
+    .entry-date {
+        font-size: 0.78em;
+        color: #fff;
+        background: {{ settings.secondary_color|default:"#FF6B6B" }};
+        padding: 1px 8px;
+        border-radius: 10px;
+        white-space: nowrap;
+    }
+    .entry-sub { font-size: 0.9em; color: #777; }
+    .entry-desc { font-size: 0.9em; margin-top: 3px; }
+    .entry ul { margin: 3px 0 0 16px; font-size: 0.9em; }
+    .entry li { margin-bottom: 2px; }
+    .grid-2 { display: flex; gap: 24px; }
+    .grid-2 > div { flex: 1; }
+    .chip {
+        display: inline-block;
+        padding: 3px 12px;
+        margin: 2px;
+        font-size: 0.82em;
+        border: 1px solid {{ settings.secondary_color|default:"#FF6B6B" }};
+        color: {{ settings.secondary_color|default:"#FF6B6B" }};
+        border-radius: 16px;
+    }
+    .item { margin-bottom: 6px; font-size: 0.9em; page-break-inside: avoid; }
+    .sm { font-size: 0.82em; color: #bbb; }
+    .dot-accent {
+        display: inline-block;
+        width: 6px; height: 6px;
+        background: {{ settings.secondary_color|default:"#FF6B6B" }};
+        border-radius: 50%;
+        margin-right: 6px;
+    }
+</style>
+</head>
+<body>
+<header class="header">
+    <h1>{{ contact.first_name }} {{ contact.last_name }}</h1>
+    <div class="contact-row">
+        {% if contact.email %}<span>{{ contact.email }}</span>{% endif %}
+        {% if contact.phone %}<span>{{ contact.phone }}</span>{% endif %}
+        {% if contact.city %}<span>{{ contact.city }}{% if contact.state %}, {{ contact.state }}{% endif %}</span>{% endif %}
+        {% if contact.country %}<span>{{ contact.country }}</span>{% endif %}
+        {% if contact.linkedin_url %}<span><a href="{{ contact.linkedin_url }}">LinkedIn</a></span>{% endif %}
+        {% if contact.website_url %}<span><a href="{{ contact.website_url }}">{{ contact.website_url }}</a></span>{% endif %}
+    </div>
+</header>
+
+{% if summary %}
+<div class="section"><h2>About Me</h2></div>
+<p class="summary">{{ summary }}</p>
+{% endif %}
+
+{% if experience %}
+<div class="section"><h2>Experience</h2></div>
+{% for job in experience %}
+<div class="entry">
+    <div class="entry-row">
+        <span class="entry-title">{{ job.position }}</span>
+        <span class="entry-date">{{ job.start_date }} &ndash; {% if job.is_current %}Present{% else %}{{ job.end_date }}{% endif %}</span>
+    </div>
+    <div class="entry-sub"><span class="dot-accent"></span>{{ job.company }}{% if job.location %}, {{ job.location }}{% endif %}</div>
+    {% if job.description %}<div class="entry-desc">{{ job.description }}</div>{% endif %}
+    {% if job.achievements %}<ul>{% for a in job.achievements %}<li>{{ a }}</li>{% endfor %}</ul>{% endif %}
+</div>
+{% endfor %}
+{% endif %}
+
+{% if education %}
+<div class="section"><h2>Education</h2></div>
+{% for edu in education %}
+<div class="entry">
+    <div class="entry-row">
+        <span class="entry-title">{{ edu.degree }}{% if edu.field_of_study %} in {{ edu.field_of_study }}{% endif %}</span>
+        <span class="entry-date">{{ edu.start_date }} &ndash; {{ edu.end_date }}</span>
+    </div>
+    <div class="entry-sub"><span class="dot-accent"></span>{{ edu.institution }}</div>
+    {% if edu.gpa %}<div class="entry-desc">GPA: {{ edu.gpa }}</div>{% endif %}
+    {% if edu.description %}<div class="entry-desc">{{ edu.description }}</div>{% endif %}
+</div>
+{% endfor %}
+{% endif %}
+
+{% if skills %}
+<div class="section"><h2>Skills</h2></div>
+<div>{% for skill in skills %}<span class="chip">{{ skill.name }}</span>{% endfor %}</div>
+{% endif %}
+
+<div class="grid-2">
+    <div>
+        {% if languages %}
+        <div class="section"><h2>Languages</h2></div>
+        {% for lang in languages %}
+        <div class="item"><span class="dot-accent"></span>{{ lang.name }}{% if lang.level %} &mdash; {{ lang.level }}{% endif %}</div>
+        {% endfor %}
+        {% endif %}
+
+        {% if certificates %}
+        <div class="section"><h2>Certifications</h2></div>
+        {% for cert in certificates %}
+        <div class="item">
+            <strong>{{ cert.name }}</strong>{% if cert.issuer %} &mdash; {{ cert.issuer }}{% endif %}
+            {% if cert.issue_date %}<br><span class="sm">{{ cert.issue_date }}</span>{% endif %}
+            {% if cert.credential_id %}<br><span class="sm">ID: {{ cert.credential_id }}</span>{% endif %}
+        </div>
+        {% endfor %}
+        {% endif %}
+    </div>
+    <div>
+        {% if awards %}
+        <div class="section"><h2>Awards</h2></div>
+        {% for award in awards %}
+        <div class="item"><strong>{{ award.title }}</strong>{% if award.issuer %} &mdash; {{ award.issuer }}{% endif %}{% if award.date %} <span class="sm">({{ award.date }})</span>{% endif %}
+        {% if award.description %}<div class="entry-desc">{{ award.description }}</div>{% endif %}</div>
+        {% endfor %}
+        {% endif %}
+
+        {% if interests %}
+        <div class="section"><h2>Interests</h2></div>
+        <div>{% for i in interests %}<span class="chip">{{ i }}</span>{% endfor %}</div>
+        {% endif %}
+    </div>
+</div>
+
+{% if projects %}
+<div class="section"><h2>Projects</h2></div>
+{% for p in projects %}
+<div class="entry">
+    <strong>{{ p.name }}</strong>{% if p.url %} &mdash; <a href="{{ p.url }}" style="color:{{ settings.secondary_color|default:'#FF6B6B' }}; font-size:0.85em;">{{ p.url }}</a>{% endif %}
+    {% if p.description %}<div class="entry-desc">{{ p.description }}</div>{% endif %}
+    {% if p.technologies %}<div>{% for t in p.technologies %}<span class="chip">{{ t }}</span>{% endfor %}</div>{% endif %}
+</div>
+{% endfor %}
+{% endif %}
+
+{% if volunteer %}
+<div class="section"><h2>Volunteer</h2></div>
+{% for v in volunteer %}
+<div class="entry">
+    <div class="entry-row"><span class="entry-title">{{ v.role }}</span><span class="entry-date">{{ v.start_date }} &ndash; {{ v.end_date }}</span></div>
+    <div class="entry-sub"><span class="dot-accent"></span>{{ v.organization }}</div>
+    {% if v.description %}<div class="entry-desc">{{ v.description }}</div>{% endif %}
+</div>
+{% endfor %}
+{% endif %}
+
+{% if custom_sections %}
+{% for section in custom_sections %}
+<div class="section"><h2>{{ section.title }}</h2></div>
+{% for item in section.items %}<p class="entry-desc">{{ item }}</p>{% endfor %}
+{% endfor %}
+{% endif %}
+</body>
+</html>

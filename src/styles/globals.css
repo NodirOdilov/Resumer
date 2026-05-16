@@ -1,0 +1,203 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------- */
+/*  Print mode                                                       */
+/*  When the user clicks "Download PDF" we call window.print(); the  */
+/*  PrintableResume element is normally hidden via .print-only and   */
+/*  becomes the only visible content during printing.                */
+/* ---------------------------------------------------------------- */
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  /* Hide everything by default ... */
+  body * {
+    visibility: hidden !important;
+  }
+  /* ... then make the printable resume tree visible. */
+  .print-only,
+  .print-only *,
+  [data-resume-print],
+  [data-resume-print] * {
+    visibility: visible !important;
+  }
+  .print-only {
+    display: block !important;
+    position: absolute;
+    inset: 0;
+    background: white;
+    padding: 12mm 14mm;
+  }
+  /* Prevent page-breaks inside section blocks where possible. */
+  [data-resume-print] section {
+    break-inside: avoid;
+  }
+  /* No browser headers/footers and no scaling artefacts. */
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}
+
+
+@theme {
+  --color-brand-primary: #0D47A1;
+  --color-brand-primary-light: #1565C0;
+  --color-brand-primary-dark: #0A3680;
+  --color-brand-secondary: #FF6F00;
+  --color-brand-secondary-light: #FF8F00;
+  --color-brand-secondary-dark: #E65100;
+  --color-brand-accent: #00BFA5;
+  --color-brand-accent-light: #1DE9B6;
+  --color-brand-accent-dark: #00897B;
+  --color-brand-success: #2E7D32;
+  --color-brand-warning: #F9A825;
+  --color-brand-error: #C62828;
+  --color-brand-info: #0277BD;
+  --color-brand-surface: #FFFFFF;
+  --color-brand-surface-alt: #F5F7FA;
+  --color-brand-text: #1A1A2E;
+  --color-brand-text-secondary: #4A5568;
+  --color-brand-text-muted: #94A3B8;
+  --color-brand-border: #E2E8F0;
+  --color-brand-divider: #F1F5F9;
+}
+
+:root {
+  --brand-primary: #0D47A1;
+  --brand-primary-light: #1565C0;
+  --brand-primary-dark: #0A3680;
+  --brand-secondary: #FF6F00;
+  --brand-secondary-light: #FF8F00;
+  --brand-secondary-dark: #E65100;
+  --brand-accent: #00BFA5;
+  --brand-accent-light: #1DE9B6;
+  --brand-accent-dark: #00897B;
+  --brand-success: #2E7D32;
+  --brand-warning: #F9A825;
+  --brand-error: #C62828;
+  --brand-info: #0277BD;
+  --brand-surface: #FFFFFF;
+  --brand-surface-alt: #F5F7FA;
+  --brand-text: #1A1A2E;
+  --brand-text-secondary: #4A5568;
+  --brand-text-muted: #94A3B8;
+  --brand-border: #E2E8F0;
+  --brand-divider: #F1F5F9;
+  --brand-radius: 0.5rem;
+  --brand-radius-lg: 0.75rem;
+  --brand-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --brand-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --brand-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.dark {
+  --brand-primary: #5C9CE6;
+  --brand-primary-light: #7AB3F0;
+  --brand-primary-dark: #3D7ACC;
+  --brand-secondary: #FFB74D;
+  --brand-secondary-light: #FFCC80;
+  --brand-secondary-dark: #FFA000;
+  --brand-accent: #4DD0BF;
+  --brand-accent-light: #80DEEA;
+  --brand-accent-dark: #26A69A;
+  --brand-success: #66BB6A;
+  --brand-warning: #FDD835;
+  --brand-error: #EF5350;
+  --brand-info: #29B6F6;
+  --brand-surface: #0F172A;
+  --brand-surface-alt: #1E293B;
+  --brand-text: #F1F5F9;
+  --brand-text-secondary: #CBD5E1;
+  --brand-text-muted: #64748B;
+  --brand-border: #334155;
+  --brand-divider: #1E293B;
+  --brand-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  --brand-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+  --brand-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4), 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    border-color: var(--brand-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    color: var(--brand-text);
+    background-color: var(--brand-surface);
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  ::selection {
+    background-color: var(--brand-primary);
+    color: #ffffff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--brand-primary);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--brand-text-muted);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--brand-text-secondary);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: var(--brand-border);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--brand-text-muted);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--brand-text-muted) transparent;
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}

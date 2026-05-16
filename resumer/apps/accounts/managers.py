@@ -1,0 +1,51 @@
+from __future__ import annotations
+
+from typing import TYPE_CHECKING, Any
+
+from django.contrib.auth.models import BaseUserManager
+
+if TYPE_CHECKING:
+    from apps.accounts.models import User
+
+
+class CustomUserManager(BaseUserManager):
+    """Custom user manager that uses email as the unique identifier."""
+
+    def create_user(
+        self,
+        email: str,
+        password: str | None = None,
+        **extra_fields: Any,
+    ) -> User:
+        """Create and return a regular user with the given email and password."""
+        if not email:
+            raise ValueError("The email address is required.")
+
+        email = self.normalize_email(email)
+        extra_fields.setdefault("is_staff", False)
+        extra_fields.setdefault("is_superuser", False)
+        extra_fields.setdefault("is_active", True)
+
+        user = self.model(email=email, **extra_fields)
+        user.set_password(password)
+        user.save(using=self._db)
+        return user
+
+    def create_superuser(
+        self,
+        email: str,
+        password: str | None = None,
+        **extra_fields: Any,
+    ) -> User:
+        """Create and return a superuser with the given email and password."""
+        extra_fields.setdefault("is_staff", True)
+        extra_fields.setdefault("is_superuser", True)
+        extra_fields.setdefault("is_active", True)
+        extra_fields.setdefault("is_verified", True)
+
+        if extra_fields.get("is_staff") is not True:
+            raise ValueError("Superuser must have is_staff=True.")
+        if extra_fields.get("is_superuser") is not True:
+            raise ValueError("Superuser must have is_superuser=True.")
+
+        return self.create_user(email, password, **extra_fields)

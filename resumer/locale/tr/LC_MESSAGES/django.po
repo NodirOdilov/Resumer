@@ -1,0 +1,240 @@
+# Resumer translations for Turkish
+# Copyright (C) 2026 Resumer
+msgid ""
+msgstr ""
+"Project-Id-Version: Resumer 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-19 00:00+0000\n"
+"PO-Revision-Date: 2026-03-19 00:00+0000\n"
+"Last-Translator: Resumer Team\n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Welcome to Resumer"
+msgstr "Resumer'a ho\u015f geldiniz"
+
+msgid "Professional Resume Builder"
+msgstr "Profesyonel \u00d6zge\u00e7mi\u015f Olu\u015fturucu"
+
+msgid "Create professional resumes, CVs, and cover letters"
+msgstr "Profesyonel \u00f6zge\u00e7mi\u015fler, CV'ler ve \u00f6n yaz\u0131lar olu\u015fturun"
+
+msgid "Sign In"
+msgstr "Giri\u015f Yap"
+
+msgid "Sign Up"
+msgstr "Kay\u0131t Ol"
+
+msgid "Log Out"
+msgstr "\u00c7\u0131k\u0131\u015f Yap"
+
+msgid "Email Address"
+msgstr "E-posta Adresi"
+
+msgid "Password"
+msgstr "\u015eifre"
+
+msgid "First Name"
+msgstr "Ad"
+
+msgid "Last Name"
+msgstr "Soyad"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "This field is required."
+msgstr "Bu alan zorunludur."
+
+msgid "Please enter a valid email address."
+msgstr "L\u00fctfen ge\u00e7erli bir e-posta adresi girin."
+
+msgid "Password must be at least 8 characters."
+msgstr "\u015eifre en az 8 karakter olmal\u0131d\u0131r."
+
+msgid "Passwords do not match."
+msgstr "\u015eifreler e\u015fle\u015fmiyor."
+
+msgid "Account created successfully."
+msgstr "Hesap ba\u015far\u0131yla olu\u015fturuldu."
+
+msgid "Email verification sent."
+msgstr "E-posta do\u011frulama g\u00f6nderildi."
+
+msgid "Password reset email sent."
+msgstr "\u015eifre s\u0131f\u0131rlama e-postas\u0131 g\u00f6nderildi."
+
+msgid "Password changed successfully."
+msgstr "\u015eifre ba\u015far\u0131yla de\u011fi\u015ftirildi."
+
+msgid "Resume"
+msgstr "\u00d6zge\u00e7mi\u015f"
+
+msgid "CV"
+msgstr "CV"
+
+msgid "Cover Letter"
+msgstr "\u00d6n Yaz\u0131"
+
+msgid "Templates"
+msgstr "\u015eablonlar"
+
+msgid "Examples"
+msgstr "\u00d6rnekler"
+
+msgid "Dashboard"
+msgstr "Kontrol Paneli"
+
+msgid "My Documents"
+msgstr "Belgelerim"
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Download"
+msgstr "\u0130ndir"
+
+msgid "Save"
+msgstr "Kaydet"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Edit"
+msgstr "D\u00fczenle"
+
+msgid "Duplicate"
+msgstr "\u00c7o\u011falt"
+
+msgid "Preview"
+msgstr "\u00d6nizleme"
+
+msgid "Draft"
+msgstr "Taslak"
+
+msgid "Complete"
+msgstr "Tamamland\u0131"
+
+msgid "Downloaded"
+msgstr "\u0130ndirildi"
+
+msgid "Contact Information"
+msgstr "\u0130leti\u015fim Bilgileri"
+
+msgid "Professional Summary"
+msgstr "Profesyonel \u00d6zet"
+
+msgid "Work Experience"
+msgstr "\u0130\u015f Deneyimi"
+
+msgid "Education"
+msgstr "E\u011fitim"
+
+msgid "Skills"
+msgstr "Beceriler"
+
+msgid "Languages"
+msgstr "Diller"
+
+msgid "Certificates"
+msgstr "Sertifikalar"
+
+msgid "Projects"
+msgstr "Projeler"
+
+msgid "Awards"
+msgstr "\u00d6d\u00fcller"
+
+msgid "Volunteer Experience"
+msgstr "G\u00f6n\u00fcll\u00fc Deneyimi"
+
+msgid "Hobbies & Interests"
+msgstr "Hobiler ve \u0130lgi Alanlar\u0131"
+
+msgid "Custom Section"
+msgstr "\u00d6zel B\u00f6l\u00fcm"
+
+msgid "PDF Document"
+msgstr "PDF Belgesi"
+
+msgid "Word Document"
+msgstr "Word Belgesi"
+
+msgid "Plain Text"
+msgstr "D\u00fcz Metin"
+
+msgid "Document generated successfully."
+msgstr "Belge ba\u015far\u0131yla olu\u015fturuldu."
+
+msgid "Document not found."
+msgstr "Belge bulunamad\u0131."
+
+msgid "Permission denied."
+msgstr "Eri\u015fim reddedildi."
+
+msgid "Subscription"
+msgstr "Abonelik"
+
+msgid "Payment"
+msgstr "\u00d6deme"
+
+msgid "Invoice"
+msgstr "Fatura"
+
+msgid "Trial"
+msgstr "Deneme"
+
+msgid "Active"
+msgstr "Aktif"
+
+msgid "Canceled"
+msgstr "\u0130ptal Edildi"
+
+msgid "Expired"
+msgstr "S\u00fcresi Doldu"
+
+msgid "Your trial expires in %(days)d days."
+msgstr "Deneme s\u00fcreniz %(days)d g\u00fcn i\u00e7inde sona erecek."
+
+msgid "Subscription confirmed."
+msgstr "Abonelik onayland\u0131."
+
+msgid "Payment successful."
+msgstr "\u00d6deme ba\u015far\u0131l\u0131."
+
+msgid "Search"
+msgstr "Ara"
+
+msgid "No results found."
+msgstr "Sonu\u00e7 bulunamad\u0131."
+
+msgid "Page not found."
+msgstr "Sayfa bulunamad\u0131."
+
+msgid "Server error."
+msgstr "Sunucu hatas\u0131."
+
+msgid "Privacy Policy"
+msgstr "Gizlilik Politikas\u0131"
+
+msgid "Terms of Service"
+msgstr "Hizmet \u015eartlar\u0131"
+
+msgid "Cookie Policy"
+msgstr "\u00c7erez Politikas\u0131"
+
+msgid "About Us"
+msgstr "Hakk\u0131m\u0131zda"
+
+msgid "Contact Us"
+msgstr "Bize Ula\u015f\u0131n"
+
+msgid "All rights reserved."
+msgstr "T\u00fcm haklar\u0131 sakl\u0131d\u0131r."

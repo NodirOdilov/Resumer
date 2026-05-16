@@ -1,0 +1,61 @@
+# ---------------------------------------------------------------------------
+# Celery Worker - reuses same build as web
+# ---------------------------------------------------------------------------
+FROM python:3.13-slim AS builder
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libpango-1.0-0 \
+    libpangocairo-1.0-0 \
+    libcairo2 \
+    libcairo2-dev \
+    libgdk-pixbuf-2.0-0 \
+    libgdk-pixbuf-2.0-dev \
+    libffi-dev \
+    libpq-dev \
+    shared-mime-info \
+    fonts-dejavu-core \
+    fonts-liberation \
+    fonts-noto \
+    fonts-noto-color-emoji \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+COPY requirements/ requirements/
+RUN pip install --no-cache-dir --prefix=/install -r requirements/production.txt
+
+# ---------------------------------------------------------------------------
+FROM python:3.13-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libpango-1.0-0 \
+    libpangocairo-1.0-0 \
+    libcairo2 \
+    libgdk-pixbuf-2.0-0 \
+    libffi8 \
+    libpq5 \
+    shared-mime-info \
+    fonts-dejavu-core \
+    fonts-liberation \
+    fonts-noto \
+    fonts-noto-color-emoji \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY --from=builder /install /usr/local
+
+RUN groupadd --gid 1000 appuser \
+    && useradd --uid 1000 --gid appuser --shell /bin/bash --create-home appuser
+
+WORKDIR /app
+COPY --chown=appuser:appuser . .
+RUN mkdir -p /app/media && chown -R appuser:appuser /app
+
+USER appuser
+
+CMD ["celery", "-A", "config", "worker", "--loglevel=info", "--concurrency=2", "-Q", "high,default,low"]

@@ -1,0 +1,16 @@
+{
+  "name": "Resumer - Professional Resume Builder",
+  "short_name": "Resumer",
+  "description": "Build professional resumes, CVs, and cover letters with AI-powered tools and expert-designed templates.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0D47A1",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

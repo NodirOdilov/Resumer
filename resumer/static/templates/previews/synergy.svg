@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 297" width="210" height="297">
+  <!-- Background -->
+  <rect width="210" height="297" fill="white"/>
+
+  <!-- Template: synergy -->
+    <!-- Header -->
+    <rect x="18" y="16" width="85" height="9" rx="3" fill="#14B8A6"/>
+    <rect x="18" y="32" width="140" height="3" rx="1.5" fill="#9CA3AF" opacity="0.5"/>
+    <rect x="18" y="39" width="84.0" height="3" rx="1.5" fill="#9CA3AF" opacity="0.5"/>
+    <!-- Connected sections with line -->
+    <line x1="28" y1="56" x2="28" y2="260" stroke="#14B8A6" stroke-width="1" opacity="0.3"/>
+    <circle cx="28" cy="62" r="4" fill="#14B8A6"/>
+    <rect x="40" y="56" width="42" height="5" rx="2.5" fill="#14B8A6" opacity="0.8"/>
+    <rect x="40" y="68" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="40" y="76" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="40" y="84" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="40" y="92" width="90.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <circle cx="28" cy="112" r="4" fill="#14B8A6"/>
+    <rect x="40" y="106" width="38" height="5" rx="2.5" fill="#14B8A6" opacity="0.8"/>
+    <rect x="40" y="118" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="40" y="126" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="40" y="134" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="40" y="142" width="90.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <circle cx="28" cy="162" r="4" fill="#14B8A6"/>
+    <rect x="40" y="156" width="34" height="5" rx="2.5" fill="#14B8A6" opacity="0.8"/>
+    <rect x="40" y="168" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="40" y="176" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="40" y="184" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="40" y="192" width="90.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <circle cx="28" cy="212" r="4" fill="#14B8A6"/>
+    <rect x="40" y="206" width="40" height="5" rx="2.5" fill="#14B8A6" opacity="0.8"/>
+    <rect x="40" y="218" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="40" y="226" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="40" y="234" width="90.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <circle cx="28" cy="254" r="4" fill="#14B8A6"/>
+    <rect x="40" y="248" width="36" height="5" rx="2.5" fill="#14B8A6" opacity="0.8"/>
+    <rect x="40" y="260" width="150" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="40" y="268" width="90.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+
+  <!-- Template name label -->
+  <rect x="0" y="280" width="210" height="17" fill="white" opacity="0.85"/>
+  <text x="105" y="293" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="600"
+        fill="#14B8A6" text-anchor="middle" letter-spacing="1.5">
+    SYNERGY
+  </text>
+</svg>

@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{ contact.first_name }} {{ contact.last_name }} - Resume</title>
+<style>
+    @page {
+        size: A4;
+        margin: {{ settings.margins|default:"10mm 12mm" }};
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: {{ settings.font_family|default:"'Roboto', 'Segoe UI', sans-serif" }};
+        font-size: {{ settings.font_size|default:"10pt" }};
+        line-height: {{ settings.line_spacing|default:"1.4" }};
+        color: {{ settings.text_color|default:"#333" }};
+    }
+    .header-grid {
+        display: flex; gap: 14px; margin-bottom: 14px;
+    }
+    .name-block {
+        background: {{ settings.primary_color|default:"#34495e" }};
+        color: #fff;
+        padding: 18px 22px;
+        flex: 1;
+    }
+    .name-block h1 { font-size: 1.8em; font-weight: 800; }
+    .contact-block {
+        background: {{ settings.secondary_color|default:"#ecf0f1" }};
+        padding: 12px 16px;
+        font-size: 0.83em;
+        color: #555;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact-block a { color: {{ settings.primary_color|default:"#34495e" }}; text-decoration: none; }
+    .contact-block div { margin-bottom: 2px; }
+    h2 {
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #fff;
+        background: {{ settings.primary_color|default:"#34495e" }};
+        padding: 4px 12px;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+    .summary { font-size: 0.95em; margin-bottom: 4px; padding: 0 4px; }
+    .grid-layout { display: flex; gap: 14px; }
+    .grid-main { flex: 2; }
+    .grid-side { flex: 1; }
+    .entry { margin-bottom: 10px; page-break-inside: avoid; padding: 0 4px; }
+    .entry-row { display: flex; justify-content: space-between; }
+    .entry-title { font-weight: 700; }
+    .entry-date { font-size: 0.82em; color: #aaa; }
+    .entry-sub { font-size: 0.9em; color: #777; }
+    .entry-desc { font-size: 0.9em; margin-top: 3px; }
+    .entry ul { margin: 3px 0 0 16px; font-size: 0.9em; }
+    .entry li { margin-bottom: 2px; }
+    .sq-item {
+        background: {{ settings.secondary_color|default:"#ecf0f1" }};
+        padding: 8px 10px;
+        margin-bottom: 6px;
+        page-break-inside: avoid;
+    }
+    .sq-item strong { font-size: 0.92em; }
+    .sm { font-size: 0.82em; color: #999; }
+    .skill-block {
+        display: inline-block;
+        background: {{ settings.primary_color|default:"#34495e" }};
+        color: #fff;
+        padding: 3px 10px;
+        margin: 2px;
+        font-size: 0.82em;
+    }
+    .tag { display: inline-block; padding: 2px 8px; margin: 2px; font-size: 0.82em; background: {{ settings.secondary_color|default:"#ecf0f1" }}; }
+</style>
+</head>
+<body>
+<div class="header-grid">
+    <div class="name-block">
+        <h1>{{ contact.first_name }}<br>{{ contact.last_name }}</h1>
+    </div>
+    <div class="contact-block">
+        {% if contact.email %}<div>{{ contact.email }}</div>{% endif %}
+        {% if contact.phone %}<div>{{ contact.phone }}</div>{% endif %}
+        {% if contact.city %}<div>{{ contact.city }}{% if contact.state %}, {{ contact.state }}{% endif %}</div>{% endif %}
+        {% if contact.linkedin_url %}<div><a href="{{ contact.linkedin_url }}">LinkedIn</a></div>{% endif %}
+        {% if contact.website_url %}<div><a href="{{ contact.website_url }}">{{ contact.website_url }}</a></div>{% endif %}
+    </div>
+</div>
+
+{% if summary %}
+<p class="summary">{{ summary }}</p>
+{% endif %}
+
+<div class="grid-layout">
+    <div class="grid-main">
+        {% if experience %}
+        <h2>Experience</h2>
+        {% for job in experience %}
+        <div class="entry">
+            <div class="entry-row">
+                <span class="entry-title">{{ job.position }}</span>
+                <span class="entry-date">{{ job.start_date }} &ndash; {% if job.is_current %}Present{% else %}{{ job.end_date }}{% endif %}</span>
+            </div>
+            <div class="entry-sub">{{ job.company }}{% if job.location %}, {{ job.location }}{% endif %}</div>
+            {% if job.description %}<div class="entry-desc">{{ job.description }}</div>{% endif %}
+            {% if job.achievements %}<ul>{% for a in job.achievements %}<li>{{ a }}</li>{% endfor %}</ul>{% endif %}
+        </div>
+        {% endfor %}
+        {% endif %}
+
+        {% if education %}
+        <h2>Education</h2>
+        {% for edu in education %}
+        <div class="entry">
+            <div class="entry-row">
+                <span class="entry-title">{{ edu.degree }}{% if edu.field_of_study %} in {{ edu.field_of_study }}{% endif %}</span>
+                <span class="entry-date">{{ edu.start_date }} &ndash; {{ edu.end_date }}</span>
+            </div>
+            <div class="entry-sub">{{ edu.institution }}</div>
+            {% if edu.gpa %}<div class="entry-desc">GPA: {{ edu.gpa }}</div>{% endif %}
+            {% if edu.description %}<div class="entry-desc">{{ edu.description }}</div>{% endif %}
+        </div>
+        {% endfor %}
+        {% endif %}
+
+        {% if projects %}
+        <h2>Projects</h2>
+        {% for p in projects %}
+        <div class="entry">
+            <strong>{{ p.name }}</strong>{% if p.url %} &mdash; <a href="{{ p.url }}" style="color:{{ settings.primary_color|default:'#34495e' }}">link</a>{% endif %}
+            {% if p.description %}<div class="entry-desc">{{ p.description }}</div>{% endif %}
+            {% if p.technologies %}<div class="sm">{{ p.technologies|join:", " }}</div>{% endif %}
+        </div>
+        {% endfor %}
+        {% endif %}
+
+        {% if volunteer %}
+        <h2>Volunteer</h2>
+        {% for v in volunteer %}
+        <div class="entry">
+            <div class="entry-row"><span class="entry-title">{{ v.role }}</span><span class="entry-date">{{ v.start_date }} &ndash; {{ v.end_date }}</span></div>
+            <div class="entry-sub">{{ v.organization }}</div>
+            {% if v.description %}<div class="entry-desc">{{ v.description }}</div>{% endif %}
+        </div>
+        {% endfor %}
+        {% endif %}
+    </div>
+
+    <div class="grid-side">
+        {% if skills %}
+        <h2>Skills</h2>
+        <div style="padding:0 2px;">
+            {% for skill in skills %}<span class="skill-block">{{ skill.name }}</span>{% endfor %}
+        </div>
+        {% endif %}
+
+        {% if languages %}
+        <h2>Languages</h2>
+        {% for lang in languages %}
+        <div class="sq-item">
+            <strong>{{ lang.name }}</strong>
+            {% if lang.level %}<br><span class="sm">{{ lang.level }}</span>{% endif %}
+        </div>
+        {% endfor %}
+        {% endif %}
+
+        {% if certificates %}
+        <h2>Certifications</h2>
+        {% for cert in certificates %}
+        <div class="sq-item">
+            <strong>{{ cert.name }}</strong>
+            {% if cert.issuer %}<br><span class="sm">{{ cert.issuer }}</span>{% endif %}
+            {% if cert.issue_date %}<br><span class="sm">{{ cert.issue_date }}</span>{% endif %}
+        </div>
+        {% endfor %}
+        {% endif %}
+
+        {% if awards %}
+        <h2>Awards</h2>
+        {% for award in awards %}
+        <div class="sq-item">
+            <strong>{{ award.title }}</strong>
+            {% if award.issuer %}<br><span class="sm">{{ award.issuer }}</span>{% endif %}
+            {% if award.date %}<br><span class="sm">{{ award.date }}</span>{% endif %}
+        </div>
+        {% endfor %}
+        {% endif %}
+
+        {% if interests %}
+        <h2>Interests</h2>
+        <div style="padding:0 2px;">{% for i in interests %}<span class="tag">{{ i }}</span>{% endfor %}</div>
+        {% endif %}
+    </div>
+</div>
+
+{% if custom_sections %}
+{% for section in custom_sections %}
+<h2>{{ section.title }}</h2>
+{% for item in section.items %}<p class="entry-desc">{{ item }}</p>{% endfor %}
+{% endfor %}
+{% endif %}
+</body>
+</html>

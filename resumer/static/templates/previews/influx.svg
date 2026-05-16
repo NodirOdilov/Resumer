@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 297" width="210" height="297">
+  <!-- Background -->
+  <rect width="210" height="297" fill="white"/>
+
+  <!-- Template: influx -->
+    <!-- Wave header -->
+    <rect x="0" y="0" width="210" height="50" fill="#6D28D9"/>
+    <path d="M0,50 Q52.5,65 105,50 Q157.5,35 210,50 L210,55 Q157.5,40 105,55 Q52.5,70 0,55 Z" fill="#DDD6FE"/>
+    <rect x="18" y="12" width="85" height="9" rx="3" fill="white" opacity="0.9"/>
+    <rect x="18" y="27" width="72.0" height="3" rx="1.5" fill="white" opacity="0.5"/>
+    <!-- Sections -->
+    <rect x="18" y="72" width="48" height="5" rx="2.5" fill="#6D28D9" opacity="0.8"/>
+    <rect x="18" y="84" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="92" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="100" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="108" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="116" width="104.39999999999999" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="132" width="42" height="5" rx="2.5" fill="#6D28D9" opacity="0.8"/>
+    <rect x="18" y="144" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="152" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="160" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="168" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="176" width="104.39999999999999" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="192" width="38" height="5" rx="2.5" fill="#6D28D9" opacity="0.8"/>
+    <rect x="18" y="204" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="212" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="220" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="228" width="104.39999999999999" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="242" width="44" height="5" rx="2.5" fill="#6D28D9" opacity="0.8"/>
+    <rect x="18" y="254" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="262" width="174" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="18" y="270" width="104.39999999999999" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+
+  <!-- Template name label -->
+  <rect x="0" y="280" width="210" height="17" fill="white" opacity="0.85"/>
+  <text x="105" y="293" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="600"
+        fill="#6D28D9" text-anchor="middle" letter-spacing="1.5">
+    INFLUX
+  </text>
+</svg>

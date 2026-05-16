@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 297" width="210" height="297">
+  <!-- Background -->
+  <rect width="210" height="297" fill="white"/>
+
+  <!-- Template: cubic -->
+    <!-- Header band -->
+    <rect x="0" y="0" width="210" height="42" fill="#DC2626"/>
+    <rect x="18" y="10" width="85" height="9" rx="2" fill="white" opacity="0.9"/>
+    <rect x="18" y="25" width="84.0" height="3" rx="1.5" fill="white" opacity="0.5"/>
+    <!-- Grid blocks -->
+    <rect x="14" y="52" width="86" height="68" rx="4" fill="#FEE2E2" stroke="#DC2626" stroke-width="0.5"/>
+    <rect x="110" y="52" width="86" height="68" rx="4" fill="#FEE2E2" stroke="#DC2626" stroke-width="0.5"/>
+    <rect x="22" y="60" width="30" height="5" rx="2.5" fill="#DC2626" opacity="0.8"/>
+    <rect x="22" y="72" width="70" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="22" y="80" width="70" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="22" y="88" width="70" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="22" y="96" width="70" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="22" y="104" width="42.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="118" y="60" width="28" height="5" rx="2.5" fill="#DC2626" opacity="0.8"/>
+    <rect x="118" y="72" width="70" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="118" y="80" width="70" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="118" y="88" width="70" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="118" y="96" width="70" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="118" y="104" width="42.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="14" y="130" width="86" height="60" rx="4" fill="#FEE2E2" stroke="#DC2626" stroke-width="0.5"/>
+    <rect x="110" y="130" width="86" height="60" rx="4" fill="#FEE2E2" stroke="#DC2626" stroke-width="0.5"/>
+    <rect x="22" y="138" width="26" height="5" rx="2.5" fill="#DC2626" opacity="0.8"/>
+    <rect x="22" y="150" width="70" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="22" y="158" width="70" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="22" y="166" width="70" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="22" y="174" width="42.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="118" y="138" width="32" height="5" rx="2.5" fill="#DC2626" opacity="0.8"/>
+    <rect x="118" y="150" width="70" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="118" y="158" width="70" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="118" y="166" width="70" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="118" y="174" width="42.0" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="14" y="200" width="182" height="55" rx="4" fill="#FEE2E2" stroke="#DC2626" stroke-width="0.5"/>
+    <rect x="22" y="208" width="40" height="5" rx="2.5" fill="#DC2626" opacity="0.8"/>
+    <rect x="22" y="220" width="166" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="22" y="228" width="166" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="22" y="236" width="166" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+    <rect x="22" y="244" width="99.6" height="3" rx="1.5" fill="#6B7280" opacity="0.5"/>
+
+  <!-- Template name label -->
+  <rect x="0" y="280" width="210" height="17" fill="white" opacity="0.85"/>
+  <text x="105" y="293" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="600"
+        fill="#DC2626" text-anchor="middle" letter-spacing="1.5">
+    CUBIC
+  </text>
+</svg>

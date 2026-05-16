@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: resumer
+  labels:
+    app.kubernetes.io/name: resumer
+    app.kubernetes.io/part-of: resumer-platform
